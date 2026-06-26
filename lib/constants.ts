@@ -29,7 +29,7 @@ export const SITE = {
     seniors: "5,650",
     children: "220+",
     volunteers: "241+",
-    years: "22+",
+    years: "27+",
   },
 } as const;
 

@@ -42,7 +42,7 @@ export default function FoundingStory() {
             Our Roots
           </span>
           <h2 className="mt-2 font-heading text-3xl font-semibold text-brand-purple sm:text-4xl">
-            One Woman&apos;s Request. 22 Years of Impact.
+            One Woman&apos;s Request. 27 Years of Impact.
           </h2>
           <p className="mt-4 text-brand-gray">
             In 1999, Bishop Jean Williams saw hungry families in her Bridgeport

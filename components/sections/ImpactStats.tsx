@@ -7,7 +7,7 @@ const stats = [
   { value: "900+", label: "Families Served Weekly", icon: <Users /> },
   { value: "5,650", label: "Senior Care Boxes Delivered", icon: <HeartHandshake /> },
   { value: "220+", label: "Children in Life-Skills Training", icon: <GraduationCap /> },
-  { value: "22+", label: "Years Serving Bridgeport", icon: <CalendarDays /> },
+  { value: "27+", label: "Years Serving Bridgeport", icon: <CalendarDays /> },
 ];
 
 export default function ImpactStats() {

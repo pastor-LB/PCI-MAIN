@@ -43,7 +43,7 @@ export default function Hero() {
             </Button>
           </div>
           <p className="mt-8 text-sm text-white/80">
-            ✓ 501(c)(3) Verified &nbsp;|&nbsp; ✓ 22 Years of Service &nbsp;|&nbsp; ✓ 900+
+            ✓ 501(c)(3) Verified &nbsp;|&nbsp; ✓ 27 Years of Service &nbsp;|&nbsp; ✓ 900+
             Families Served Weekly
           </p>
         </motion.div>

@@ -13,7 +13,7 @@ import CTABanner from "@/components/sections/CTABanner";
 export const metadata: Metadata = generatePageMetadata({
   title: "About Us — Park City Initiative | Nonprofit Bridgeport CT",
   description:
-    "Learn about Park City Initiative, a 22-year-old Bridgeport, CT nonprofit fighting food insecurity and building community through youth programs and outreach.",
+    "Learn about Park City Initiative, a 27-year-old Bridgeport, CT nonprofit fighting food insecurity and building community through youth programs and outreach.",
   path: "/about",
 });
 
@@ -81,7 +81,7 @@ export default function AboutPage() {
 
       <Section background="white">
         <h2 className="text-center font-heading text-3xl font-semibold text-brand-purple">
-          22 Years Strong
+          27 Years Strong
         </h2>
         <div className="mt-10 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-6">
           {[
