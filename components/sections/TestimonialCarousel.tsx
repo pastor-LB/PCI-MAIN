@@ -6,7 +6,8 @@ import { Quote, ChevronLeft, ChevronRight } from "lucide-react";
 import Link from "next/link";
 import Section from "@/components/ui/Section";
 
-// PLACEHOLDER testimonials — replace with real community voices.
+// TODO: PLACEHOLDER testimonials — replace with real community voices.
+// BUG-015: Interview 3 real community members, replace Maria S., Darnell W., Pat R. with actual names + quotes.
 const testimonials = [
   {
     quote:
