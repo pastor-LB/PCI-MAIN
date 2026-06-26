@@ -12,7 +12,7 @@ import Button from "@/components/ui/Button";
 import { GraduationCap, Truck, Sun } from "lucide-react";
 
 export const metadata: Metadata = generatePageMetadata({
-  title: "Youth Programs Bridgeport CT | Park City Kidz Academy & Summer Camp | Park City Initiative",
+  title: "Youth Programs Bridgeport CT | Park City Kidz Academy & Summer Camp",
   description:
     "Park City Kidz Academy, Kidz Mobile, and S.C.A.M.P. summer camp build tomorrow's leaders through life-skills training and mentorship in Bridgeport, CT.",
   path: "/one-child",
@@ -79,12 +79,18 @@ export default function OneChildPage() {
           Photo Gallery
         </h2>
         <div className="mt-10 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-6">
-          {Array.from({ length: 6 }).map((_, index) => (
+          {[
+            { src: 'https://images.unsplash.com/photo-1529390079861-591de354faf5?w=400&q=80', alt: 'Children learning in youth program' },
+            { src: 'https://images.unsplash.com/photo-1509062522246-3755977927d7?w=400&q=80', alt: 'Mentor working with youth' },
+            { src: 'https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=400&q=80', alt: 'Children participating in summer camp activities' },
+            { src: 'https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=400&q=80', alt: 'Youth leadership training session' },
+            { src: 'https://images.unsplash.com/photo-1497366216548-37526070297c?w=400&q=80', alt: 'S.C.A.M.P. summer program activities' },
+            { src: 'https://images.unsplash.com/photo-1604881991720-f91add269bed?w=400&q=80', alt: 'Kidz Academy after-school program' },
+          ].map((img, index) => (
             <div key={index} className="relative aspect-square overflow-hidden rounded-xl">
               <Image
-                src="https://images.unsplash.com/photo-1529390079861-591de354faf5?w=400&q=80"
-                // TODO: Replace with actual PCI photography
-                alt="Children participating in Park City Initiative youth programs"
+                src={img.src}
+                alt={img.alt}
                 fill
                 className="object-cover"
               />

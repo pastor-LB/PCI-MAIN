@@ -10,7 +10,7 @@ import StatCard from "@/components/ui/StatCard";
 import { Briefcase, ShieldCheck, Users2 } from "lucide-react";
 
 export const metadata: Metadata = generatePageMetadata({
-  title: "Youth Community Leadership & Workforce Development | PCY ACTS | Park City Initiative",
+  title: "Youth Community Leadership & Workforce Development | PCY ACTS",
   description:
     "Park City Youth ACTS trains young leaders in career readiness, leads Adopt-A-Block cleanups, and develops community leadership in Bridgeport, CT.",
   path: "/one-block",

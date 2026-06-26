@@ -10,7 +10,7 @@ import GetHelpForm from "@/components/forms/GetHelpForm";
 import { Store, HeartHandshake, Truck } from "lucide-react";
 
 export const metadata: Metadata = generatePageMetadata({
-  title: "Bishop Jean Williams Food Pantry | Free Food Bridgeport CT | Park City Initiative",
+  title: "Bishop Jean Williams Food Pantry | Free Food Bridgeport CT",
   description:
     "Free food pantry, senior care boxes, and mobile pantry services from the Bishop Jean Williams Food Pantry at Park City Initiative in Bridgeport, CT.",
   path: "/one-meal",

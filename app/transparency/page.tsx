@@ -63,18 +63,15 @@ export default function TransparencyPage() {
       <Section background="cream">
         <div className="mx-auto max-w-2xl rounded-2xl bg-white p-8 text-center shadow-lg">
           <h2 className="font-heading text-2xl font-semibold text-brand-purple">
-            2025 Annual Report — Coming Soon
+            2025 Annual Report
           </h2>
           <p className="mt-2 text-sm text-brand-gray">
-            Our full annual report will be available here as a downloadable PDF.
+            Our full 2025 annual report is available upon request. Contact us at{" "}
+            <a href="mailto:help@parkcityinitiative.org" className="font-semibold text-brand-purple hover:underline">
+              help@parkcityinitiative.org
+            </a>{" "}
+            for detailed financial information and program reports.
           </p>
-          <a
-            href="#"
-            className="mt-4 inline-block rounded-lg bg-brand-purple px-5 py-2.5 text-sm font-bold uppercase tracking-wide text-white opacity-70"
-            aria-disabled="true"
-          >
-            Download PDF (Coming Soon)
-          </a>
         </div>
       </Section>
 

@@ -16,6 +16,10 @@ export default function Navbar() {
   const isHome = pathname === "/";
 
   useEffect(() => {
+    setOpenDropdown(null);
+  }, [pathname]);
+
+  useEffect(() => {
     function onScroll() {
       setScrolled(window.scrollY > 24);
     }

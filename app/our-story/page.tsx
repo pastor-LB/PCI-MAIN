@@ -10,7 +10,7 @@ import StoryTimeline from "@/components/sections/StoryTimeline";
 import CTABanner from "@/components/sections/CTABanner";
 
 export const metadata: Metadata = generatePageMetadata({
-  title: "Our Story — From One Request to 1 Million Meals | Park City Initiative",
+  title: "Our Story — From One Request to 1 Million Meals",
   description:
     "The story of Park City Initiative: from Bishop Jean Williams's request in 1999 to distributing over 1 million meals a year in Bridgeport, CT.",
   path: "/our-story",

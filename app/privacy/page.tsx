@@ -5,7 +5,7 @@ import Breadcrumbs from "@/components/ui/Breadcrumbs";
 import Section from "@/components/ui/Section";
 
 export const metadata: Metadata = generatePageMetadata({
-  title: "Privacy Policy | Park City Initiative",
+  title: "Privacy Policy",
   description: "Park City Initiative's privacy policy describing how we collect and use information.",
   path: "/privacy",
 });

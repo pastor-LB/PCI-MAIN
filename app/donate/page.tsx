@@ -110,9 +110,9 @@ export default function DonatePage() {
             Park City Initiative is a verified 501(c)(3) nonprofit. EIN: {SITE.ein}
           </p>
           <p className="text-sm text-brand-gray">Secure &amp; tax-deductible.</p>
-          <div className="rounded-lg bg-white px-6 py-3 text-sm font-semibold text-brand-gray shadow-sm">
-            Candid / GuideStar Seal — Placeholder
-          </div>
+          <p className="text-sm text-brand-gray">
+            All donations are tax-deductible. Financials available upon request.
+          </p>
           <p className="text-sm text-brand-gray">
             Questions about giving?{" "}
             <a href={`mailto:${SITE.email}`} className="font-semibold text-brand-purple underline">

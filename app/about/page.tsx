@@ -24,8 +24,7 @@ const breadcrumbItems = [
 
 const staffPlaceholders = [
   { name: "Mary Green", role: "Chief Executive Officer" },
-  { name: "Staff Member", role: "Program Director" }, // PLACEHOLDER
-  { name: "Staff Member", role: "Operations Manager" }, // PLACEHOLDER
+  // TODO: Add Program Director and Operations Manager when staff photos are available
 ];
 
 export default function AboutPage() {
@@ -85,12 +84,18 @@ export default function AboutPage() {
           22 Years Strong
         </h2>
         <div className="mt-10 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-6">
-          {Array.from({ length: 6 }).map((_, index) => (
+          {[
+            { src: 'https://images.unsplash.com/photo-1593113646773-028c64a8f1b1?w=400&q=80', alt: 'Volunteers distributing food at community pantry' },
+            { src: 'https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=400&q=80', alt: 'Community members working together' },
+            { src: 'https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?w=400&q=80', alt: 'Volunteers packing food boxes for delivery' },
+            { src: 'https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?w=400&q=80', alt: 'Community outreach event' },
+            { src: 'https://images.unsplash.com/photo-1559027615-cd4628902d4a?w=400&q=80', alt: 'Food pantry serving families' },
+            { src: 'https://images.unsplash.com/photo-1531206715517-5c0ba140b2b8?w=400&q=80', alt: 'Park City Initiative staff and volunteers' },
+          ].map((img, index) => (
             <div key={index} className="relative aspect-square overflow-hidden rounded-xl">
               <Image
-                src="https://images.unsplash.com/photo-1531206715517-5c0ba140b2b8?w=400&q=80"
-                // TODO: Replace with actual PCI photography
-                alt="PCI volunteers serving the Bridgeport community"
+                src={img.src}
+                alt={img.alt}
                 fill
                 className="object-cover"
               />

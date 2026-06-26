@@ -10,7 +10,7 @@ import Section from "@/components/ui/Section";
 import Button from "@/components/ui/Button";
 
 export const metadata: Metadata = generatePageMetadata({
-  title: "Our Programs — Food Pantry, Youth Development & Community | Park City Initiative",
+  title: "Our Programs — Food Pantry, Youth Development & Community",
   description:
     "Explore Park City Initiative's three core programs: One Meal (food pantry), One Child (youth development), and One Block (community leadership) in Bridgeport, CT.",
   path: "/programs",

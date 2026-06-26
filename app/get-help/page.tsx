@@ -10,7 +10,7 @@ import GetHelpForm from "@/components/forms/GetHelpForm";
 import { Utensils, ShieldAlert, GraduationCap, Phone } from "lucide-react";
 
 export const metadata: Metadata = generatePageMetadata({
-  title: "Get Help Now — Food, Housing, Youth Programs | Bridgeport CT | Park City Initiative",
+  title: "Get Help Now — Food, Housing, Youth Programs | Bridgeport CT",
   description:
     "Need food, housing, or youth program support in Bridgeport, CT? Park City Initiative connects you with the resources you need — no judgment, no wait.",
   path: "/get-help",

@@ -23,6 +23,21 @@ export default function CountdownTimer({ targetDate }: { targetDate: string }) {
     return () => clearInterval(interval);
   }, [targetDate]);
 
+  const isOver = timeLeft.days === 0 && timeLeft.hours === 0 && timeLeft.minutes === 0 && timeLeft.seconds === 0;
+
+  if (isOver) {
+    return (
+      <div className="mt-8 text-center py-8">
+        <p className="text-xl font-semibold text-white mb-2">
+          Walk-A-Thon 2026 is complete — thank you to every walker!
+        </p>
+        <p className="text-white/80">
+          Walk-A-Thon 2027 is coming. Stay tuned for the announcement.
+        </p>
+      </div>
+    );
+  }
+
   const units: { label: string; value: number }[] = [
     { label: "Days", value: timeLeft.days },
     { label: "Hours", value: timeLeft.hours },

@@ -23,7 +23,7 @@ export default function Hero() {
         <motion.div
           initial={{ opacity: 0, y: 12 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
+          transition={{ duration: 0.3 }}
         >
           <Badge variant="white">Serving Bridgeport Since 1999</Badge>
           <h1 className="mt-6 font-heading text-4xl font-bold text-white sm:text-5xl lg:text-6xl">

@@ -5,7 +5,7 @@ import Breadcrumbs from "@/components/ui/Breadcrumbs";
 import Section from "@/components/ui/Section";
 
 export const metadata: Metadata = generatePageMetadata({
-  title: "Terms of Use | Park City Initiative",
+  title: "Terms of Use",
   description: "Terms of use for the Park City Initiative website.",
   path: "/terms",
 });
