@@ -4,7 +4,7 @@ import Section from "@/components/ui/Section";
 
 const stats = [
   { value: "1,000,000+", label: "Meals Distributed in 2025", icon: <Utensils /> },
-  { value: "900+", label: "Families Served Monthly", icon: <Users /> },
+  { value: "900+", label: "Families Served Weekly", icon: <Users /> },
   { value: "5,650", label: "Senior Care Boxes Delivered", icon: <HeartHandshake /> },
   { value: "220+", label: "Children in Life-Skills Training", icon: <GraduationCap /> },
   { value: "22+", label: "Years Serving Bridgeport", icon: <CalendarDays /> },
