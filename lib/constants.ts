@@ -41,6 +41,7 @@ export const NAV_LINKS = [
     children: [
       { label: "Our Story", href: "/our-story" },
       { label: "Our Impact", href: "/our-impact" },
+      { label: "News & Stories", href: "/news" },
       { label: "Partners", href: "/about#partners" },
       { label: "Contact Us", href: "/contact" },
     ],
@@ -70,7 +71,7 @@ export const FOOTER_QUICK_LINKS = [
   { label: "Volunteer", href: "/volunteer" },
   { label: "Donate", href: "/donate" },
   { label: "Programs", href: "/programs" },
-  { label: "Our Story", href: "/our-story" },
+  { label: "News & Stories", href: "/news" },
   { label: "Contact", href: "/contact" },
 ] as const;
 
