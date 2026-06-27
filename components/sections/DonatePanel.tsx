@@ -50,9 +50,9 @@ function DonatePanelInner() {
         <div className="inline-flex rounded-full bg-brand-gray-light p-1">
           <button
             onClick={() => setFrequency("monthly")}
-            className={`rounded-full px-8 py-3 text-sm font-bold uppercase tracking-wide transition-all order-1 ${
+            className={`rounded-full px-8 py-3 text-sm font-bold uppercase tracking-wide transition-all ${
               frequency === "monthly"
-                ? "bg-brand-gold text-brand-purple-dark shadow-lg scale-105"
+                ? "bg-brand-purple text-white shadow-lg"
                 : "bg-transparent text-brand-charcoal hover:bg-white"
             }`}
           >
@@ -60,8 +60,10 @@ function DonatePanelInner() {
           </button>
           <button
             onClick={() => setFrequency("once")}
-            className={`rounded-full px-8 py-3 text-sm font-bold uppercase tracking-wide transition-all order-2 ${
-              frequency === "once" ? "bg-brand-purple text-white" : "bg-transparent text-brand-charcoal hover:bg-white"
+            className={`rounded-full px-8 py-3 text-sm font-bold uppercase tracking-wide transition-all ${
+              frequency === "once"
+                ? "bg-brand-purple text-white shadow-lg"
+                : "bg-transparent text-brand-charcoal hover:bg-white"
             }`}
           >
             Give Once
