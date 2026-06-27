@@ -47,7 +47,6 @@ function DonatePanelInner() {
   return (
     <div>
       <div className="flex flex-col items-center gap-3">
-        <p className="text-xs font-semibold text-brand-gold">✓ Monthly Giving Has 90%+ Retention</p>
         <div className="inline-flex rounded-full bg-brand-gray-light p-1">
           <button
             onClick={() => setFrequency("monthly")}
