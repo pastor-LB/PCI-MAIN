@@ -20,7 +20,7 @@ const tiers = [
 ];
 
 export default function DonateWidget() {
-  const [frequency, setFrequency] = useState<"once" | "monthly">("once");
+  const [frequency, setFrequency] = useState<"once" | "monthly">("monthly");
 
   return (
     <Section background="purple">
@@ -31,20 +31,20 @@ export default function DonateWidget() {
       <div className="mt-6 flex justify-center">
         <div className="inline-flex rounded-full bg-white/10 p-1">
           <button
+            onClick={() => setFrequency("monthly")}
+            className={`rounded-full px-5 py-2 text-sm font-bold uppercase tracking-wide ${
+              frequency === "monthly" ? "bg-brand-gold text-brand-purple-dark" : "text-white"
+            }`}
+          >
+            Give Monthly ⭐
+          </button>
+          <button
             onClick={() => setFrequency("once")}
             className={`rounded-full px-5 py-2 text-sm font-bold uppercase tracking-wide ${
               frequency === "once" ? "bg-brand-gold text-brand-purple-dark" : "text-white"
             }`}
           >
             Give Once
-          </button>
-          <button
-            onClick={() => setFrequency("monthly")}
-            className={`rounded-full px-5 py-2 text-sm font-bold uppercase tracking-wide ${
-              frequency === "monthly" ? "bg-brand-gold text-brand-purple-dark" : "text-white"
-            }`}
-          >
-            Give Monthly
           </button>
         </div>
       </div>
