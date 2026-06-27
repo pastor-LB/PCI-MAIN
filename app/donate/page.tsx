@@ -12,7 +12,7 @@ import { ShieldCheck } from "lucide-react";
 export const metadata: Metadata = generatePageMetadata({
   title: "Donate to Park City Initiative | Support Bridgeport Families | 501(c)(3) Tax-Deductible",
   description:
-    "Donate to Park City Initiative and feed a Bridgeport family tonight. 100% tax-deductible. Give once or monthly to support food, youth, and community programs.",
+    "Donate to Park City Initiative and feed a family in need tonight. 100% tax-deductible. Give once or monthly to support food, youth, and community programs.",
   path: "/donate",
 });
 
