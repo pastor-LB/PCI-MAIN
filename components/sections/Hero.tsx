@@ -30,7 +30,7 @@ export default function Hero() {
           className="mb-12"
         >
           {/* Mission statement first — answer WHY before asking */}
-          <Badge variant="gold" className="mb-6">✓ LIVE UPDATED VERSION</Badge>
+          <Badge variant="gold" className="mb-6">Why We Exist</Badge>
           <p className="text-xl text-brand-gray mb-8 max-w-2xl mx-auto leading-relaxed">
             When one grandmother asked Bishop Jean Williams for help feeding her family,
             a movement began. Today, Park City Initiative answers that same call for thousands
