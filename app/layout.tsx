@@ -10,12 +10,14 @@ import { organizationSchema } from "@/lib/schema";
 
 const inter = Inter({
   variable: "--font-inter",
+  weight: ["400", "500", "600", "700"],
   subsets: ["latin"],
   display: "swap",
 });
 
 const playfair = Playfair_Display({
   variable: "--font-playfair",
+  weight: ["700", "800", "900"],
   subsets: ["latin"],
   display: "swap",
 });
