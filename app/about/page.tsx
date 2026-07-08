@@ -11,7 +11,7 @@ import PartnerLogos from "@/components/sections/PartnerLogos";
 import CTABanner from "@/components/sections/CTABanner";
 
 export const metadata: Metadata = generatePageMetadata({
-  title: "About Us — Park City Initiative | Nonprofit Bridgeport CT",
+  title: "About Us — Our Mission & Leadership",
   description:
     "Learn about Park City Initiative, a 27-year-old Bridgeport, CT nonprofit fighting food insecurity and building community through youth programs and outreach.",
   path: "/about",

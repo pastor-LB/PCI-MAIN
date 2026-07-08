@@ -8,7 +8,7 @@ import PageHero from "@/components/sections/PageHero";
 import Section from "@/components/ui/Section";
 
 export const metadata: Metadata = generatePageMetadata({
-  title: "News & Stories — Park City Initiative",
+  title: "News & Stories — Community Updates",
   description:
     "Latest news, volunteer spotlights, community stories, and impact updates from Park City Initiative in Bridgeport, CT.",
   path: "/news",

@@ -8,7 +8,7 @@ import ContactForm from "@/components/forms/ContactForm";
 import { MapPin, Mail, Phone } from "lucide-react";
 
 export const metadata: Metadata = generatePageMetadata({
-  title: "Contact Park City Initiative | Bridgeport CT Nonprofit",
+  title: "Contact Us — Get in Touch",
   description:
     "Contact Park City Initiative in Bridgeport, CT. Reach out about volunteering, donating, partnerships, or general questions.",
   path: "/contact",

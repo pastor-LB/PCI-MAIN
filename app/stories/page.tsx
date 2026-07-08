@@ -9,7 +9,7 @@ import PageHero from "@/components/sections/PageHero";
 import Section from "@/components/ui/Section";
 
 export const metadata: Metadata = generatePageMetadata({
-  title: "Stories — Park City Initiative",
+  title: "Stories — Lives Changed",
   description:
     "Real stories from community members, volunteers, and families whose lives have been transformed by Park City Initiative.",
   path: "/stories",

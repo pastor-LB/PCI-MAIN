@@ -10,7 +10,7 @@ import CTABanner from "@/components/sections/CTABanner";
 import { Utensils, Users, HeartHandshake, GraduationCap, Trophy, Sparkles } from "lucide-react";
 
 export const metadata: Metadata = generatePageMetadata({
-  title: "Our Impact in 2025 | Park City Initiative — Bridgeport CT Food Bank & Youth Programs",
+  title: "Our Impact in 2025 — Food Bank & Youth Programs",
   description:
     "See Park City Initiative's 2025 impact: 1 million+ meals distributed, 32,429 families supported, 5,650 senior care boxes, and 220 children in life-skills training.",
   path: "/our-impact",

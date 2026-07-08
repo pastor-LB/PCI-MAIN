@@ -30,6 +30,9 @@ export default function Hero() {
           className="mb-12"
         >
           {/* Mission statement first — answer WHY before asking */}
+          <h1 className="text-4xl sm:text-5xl font-bold text-brand-purple mb-6">
+            Food Pantry & Community Programs in Bridgeport, CT
+          </h1>
           <Badge variant="gold" className="mb-6">Why We Exist</Badge>
           <p className="text-xl text-brand-gray mb-8 max-w-2xl mx-auto leading-relaxed">
             When one grandmother asked Bishop Jean Williams for help feeding her family,

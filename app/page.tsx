@@ -12,7 +12,7 @@ import DonateWidget from "@/components/sections/DonateWidget";
 import NewsletterSignup from "@/components/sections/NewsletterSignup";
 
 export const metadata: Metadata = generatePageMetadata({
-  title: "Food Pantry & Community Programs | Park City Initiative — Bridgeport, CT",
+  title: "Food Pantry & Community Programs in Bridgeport CT",
   description:
     "Park City Initiative serves Bridgeport, CT families through the Bishop Jean Williams Food Pantry, youth development programs, and community outreach. Over 1 million meals distributed annually.",
   path: "/",

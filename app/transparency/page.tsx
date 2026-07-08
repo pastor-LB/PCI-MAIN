@@ -8,7 +8,7 @@ import Section from "@/components/ui/Section";
 import Card from "@/components/ui/Card";
 
 export const metadata: Metadata = generatePageMetadata({
-  title: "Financial Transparency & Annual Report | Park City Initiative 501(c)(3)",
+  title: "Financial Transparency & Annual Report",
   description:
     "Park City Initiative is committed to financial transparency. View our 501(c)(3) status, EIN, and annual report information.",
   path: "/transparency",

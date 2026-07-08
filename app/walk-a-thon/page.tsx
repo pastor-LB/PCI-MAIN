@@ -9,7 +9,7 @@ import Button from "@/components/ui/Button";
 import { Heart, Calendar } from "lucide-react";
 
 export const metadata: Metadata = generatePageMetadata({
-  title: "Walk-A-Thon — Park City Initiative",
+  title: "Walk-A-Thon — Support Our Community",
   description:
     "Thank you to everyone who walked with us in 2026! The PCI Walk-A-Thon returns in 2027. Stay tuned for details.",
   path: "/walk-a-thon",

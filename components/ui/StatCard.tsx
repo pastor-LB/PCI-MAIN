@@ -45,6 +45,7 @@ export default function StatCard({
 }: StatCardProps) {
   const ref = useRef<HTMLDivElement>(null);
   const inView = useInView(ref, { once: true, margin: "-50px" });
+  const hasAnimated = useRef(false);
 
   const numericMatch = value.match(/[\d,]+/);
   const numericTarget = numericMatch ? parseInt(numericMatch[0].replace(/,/g, ""), 10) : null;
@@ -53,8 +54,12 @@ export default function StatCard({
     ? value.slice((numericMatch.index ?? 0) + numericMatch[0].length)
     : value;
 
-  const animatedCount = useCountUp(numericTarget ?? 0, inView);
-  const displayCount = inView ? animatedCount : (numericTarget ?? 0);
+  if (inView && !hasAnimated.current) {
+    hasAnimated.current = true;
+  }
+
+  const animatedCount = useCountUp(numericTarget ?? 0, hasAnimated.current);
+  const displayCount = hasAnimated.current ? animatedCount : 0;
 
   const isGold = variant === "gold-on-dark";
 

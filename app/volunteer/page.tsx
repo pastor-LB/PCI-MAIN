@@ -11,7 +11,7 @@ import VolunteerForm from "@/components/forms/VolunteerForm";
 import { Utensils, GraduationCap, ShieldCheck } from "lucide-react";
 
 export const metadata: Metadata = generatePageMetadata({
-  title: "Volunteer in Bridgeport CT | Join Park City Initiative | Help Your Community",
+  title: "Volunteer — Help Your Community",
   description:
     "Volunteer with Park City Initiative in Bridgeport, CT. Help at the food pantry, mentor youth, or lead an Adopt-A-Block cleanup in your neighborhood.",
   path: "/volunteer",
