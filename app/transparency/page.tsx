@@ -14,6 +14,9 @@ export const metadata: Metadata = generatePageMetadata({
   path: "/transparency",
 });
 
+// Hidden from search until placeholder figures are replaced with real data.
+metadata.robots = { index: false, follow: false };
+
 const breadcrumbItems = [
   { name: "Home", href: "/" },
   { name: "Transparency", href: "/transparency" },
@@ -113,8 +116,8 @@ export default function TransparencyPage() {
 
         <p className="mt-6 text-center text-sm text-brand-gray">
           Questions about our finances? Contact{" "}
-          <a href={`mailto:${SITE.infoEmail}`} className="font-semibold text-brand-purple underline">
-            {SITE.infoEmail}
+          <a href={`mailto:${SITE.email}`} className="font-semibold text-brand-purple underline">
+            {SITE.email}
           </a>
         </p>
       </Section>

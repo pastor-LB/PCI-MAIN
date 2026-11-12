@@ -23,6 +23,7 @@ const breadcrumbItems = [
 ];
 
 const staffPlaceholders = [
+  { name: "Bishop Jean Williams", role: "Founder" },
   { name: "Mary Green", role: "Chief Executive Officer" },
   // TODO: Add Program Director and Operations Manager when staff photos are available
 ];

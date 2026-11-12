@@ -8,7 +8,6 @@ export const SITE = {
   phone: "203-873-0260",
   phoneDisplay: "(203) 873-0260",
   email: "help@parkcityinitiative.org",
-  infoEmail: "info@parkcityinitiative.org",
   address: {
     street: "857 Howard Ave",
     city: "Bridgeport",

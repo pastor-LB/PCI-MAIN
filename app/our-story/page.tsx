@@ -32,7 +32,7 @@ const milestones = [
   { year: "2020", title: "COVID-19 Volunteer Recognition", description: "PCI's pandemic-response volunteers are recognized by Senator Blumenthal.", icon: ShieldCheck },
   { year: "2021", title: "Major Funding Awards", description: "Hartford Healthcare awards $50,000 and First County Bank awards $5,000.", icon: Coins },
   { year: "2022", title: "S.C.A.M.P. Summer Camp Launches", description: "The first year of S.C.A.M.P. summer camp runs free for all participating families.", icon: Sun },
-  { year: "2023", title: "One Million Meals & 20th Anniversary", description: "PCI hits the one-million-meal milestone, launches Park City Youth ACTS, opens PCK Academy, celebrates 20 years, and moves to 3160 Park Ave.", icon: Trophy },
+  { year: "2023", title: "One Million Meals & 20th Anniversary", description: "PCI hits the one-million-meal milestone, launches Park City Youth ACTS, opens Kidz Academy, celebrates 20 years, and moves to 3160 Park Ave.", icon: Trophy },
   { year: "2025", title: "One-Stop-Shop Community Market Opens", description: "A 7,500 sq ft Community Market opens with a Hartford Health Care clinic, financial literacy programs, and wraparound services.", icon: Store },
 ];
 
@@ -75,7 +75,7 @@ export default function OurStoryPage() {
               <span className="font-semibold text-brand-charcoal"> trusted cornerstone of Bridgeport's social fabric.</span>
             </p>
             <p>
-              Today, we serve over 900+ families every week, distribute 1 million+ meals annually,
+              Today, we serve 900+ families every week, distribute 1 million+ meals annually,
               provide education and mentorship to hundreds of young people, and actively transform
               entire city blocks through volunteer action. Yet our mission remains unchanged:
               <span className="font-semibold text-brand-purple"> to meet basic needs today, restore hope for tomorrow,

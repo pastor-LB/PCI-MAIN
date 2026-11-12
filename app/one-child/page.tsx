@@ -12,9 +12,9 @@ import Button from "@/components/ui/Button";
 import { GraduationCap, Truck, Sun } from "lucide-react";
 
 export const metadata: Metadata = generatePageMetadata({
-  title: "Youth Programs Bridgeport CT | Park City Kidz Academy & Summer Camp",
+  title: "Youth Programs Bridgeport CT | Kidz Academy & Summer Camp",
   description:
-    "Park City Kidz Academy, Kidz Mobile, and S.C.A.M.P. summer camp build tomorrow's leaders through life-skills training and mentorship in Bridgeport, CT.",
+    "Kidz Academy, Kidz Mobile, and S.C.A.M.P. summer camp build tomorrow's leaders through life-skills training and mentorship in Bridgeport, CT.",
   path: "/one-child",
 });
 

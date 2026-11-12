@@ -148,9 +148,6 @@ export default function Footer() {
             <Link href="/terms" className="hover:text-brand-gold">
               Terms of Use
             </Link>
-            <Link href="/transparency" className="hover:text-brand-gold">
-              Transparency / Annual Report
-            </Link>
           </div>
         </div>
       </div>

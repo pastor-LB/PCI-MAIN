@@ -16,7 +16,7 @@ const programs = [
   {
     title: "One Child",
     description:
-      "Park City Kidz Academy, Kidz Mobile, and S.C.A.M.P. give children life-skills training, mentorship, and a safe place to grow.",
+      "Kidz Academy, Kidz Mobile, and S.C.A.M.P. give children life-skills training, mentorship, and a safe place to grow.",
     stat: "220+ children in youth programs",
     icon: GraduationCap,
     href: "/one-child",

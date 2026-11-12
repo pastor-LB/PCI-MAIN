@@ -23,8 +23,8 @@ const breadcrumbItems = [
 ];
 
 const stats = [
-  { value: "1,000,000+", label: "Meals Distributed", icon: <Utensils /> },
-  { value: "32,429", label: "Families Supported", icon: <Users /> },
+  { value: "1,000,000+", label: "Meals Distributed in 2025", icon: <Utensils /> },
+  { value: "32,429", label: "Families Supported in 2025", icon: <Users /> },
   { value: "5,650", label: "Senior Care Boxes", icon: <HeartHandshake /> },
   { value: "220", label: "Children in Life-Skills Training", icon: <GraduationCap /> },
   { value: "60", label: "Students Sponsored — Inspire Sports Camp", icon: <Trophy /> },
@@ -103,13 +103,7 @@ export default function OurImpactPage() {
           growing youth workforce development, and deepening partnerships with local healthcare
           providers to reach even more Bridgeport families.
         </p>
-        <p className="mt-4 text-sm text-brand-gray">
-          Read our full{" "}
-          <a href="/transparency" className="font-semibold text-brand-purple underline">
-            financial transparency report
-          </a>
-          .
-        </p>
+
       </Section>
 
       <CTABanner

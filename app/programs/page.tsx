@@ -40,7 +40,7 @@ const programs = [
     title: "One Child",
     subtitle: "Youth Development & Education",
     description:
-      "Park City Kidz Academy, Kidz Mobile, and S.C.A.M.P. give children life-skills training, mentorship, and a safe place to learn and grow.",
+      "Kidz Academy, Kidz Mobile, and S.C.A.M.P. give children life-skills training, mentorship, and a safe place to learn and grow.",
     details: [
       "220+ children in life-skills training programs",
       "After-school tutoring & mentorship",
