@@ -65,16 +65,16 @@ export default function Navbar() {
   }
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-brand-purple shadow-lg">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-white shadow-md border-b-4 border-brand-gold">
       <div ref={navRef} className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-24">
           {/* Logo */}
           <Link
             href="/"
-            className="text-white font-bold text-lg tracking-wide hover:text-brand-gold transition-colors"
+            className="flex items-center shrink-0"
             aria-label="Park City Initiative — Home"
           >
-            <Image src="/images/pci-logo.png" alt="Park City Initiative Corp." width={318} height={184} priority className="h-20 w-auto" />
+            <Image src="/images/pci-logo.png" alt="Park City Initiative Corp." width={431} height={240} priority className="h-20 w-auto" />
           </Link>
 
           {/* Desktop nav */}
@@ -92,7 +92,7 @@ export default function Navbar() {
                       ${
                         isActive(item.href)
                           ? "text-brand-gold"
-                          : "text-white hover:bg-white/10 hover:text-brand-gold"
+                          : "text-brand-purple hover:bg-brand-purple/5 hover:text-brand-gold"
                       }
                     `}
                   >
@@ -120,8 +120,8 @@ export default function Navbar() {
                       transition-colors duration-150
                       ${
                         openMenu === item.label
-                          ? "bg-white/10 text-brand-gold"
-                          : "text-white hover:bg-white/10 hover:text-brand-gold"
+                          ? "bg-brand-purple/5 text-brand-gold"
+                          : "text-brand-purple hover:bg-brand-purple/5 hover:text-brand-gold"
                       }
                     `}
                   >
@@ -177,15 +177,15 @@ export default function Navbar() {
           <div className="hidden lg:flex items-center gap-2">
             <Link
               href="/get-help"
-              className="px-4 py-2 text-sm font-semibold text-white border border-white/40
-                         rounded-md hover:bg-white/10 transition-colors"
+              className="px-4 py-2 text-sm font-semibold text-brand-purple border border-brand-purple/40
+                         rounded-md hover:bg-brand-purple/5 transition-colors"
             >
               GET HELP
             </Link>
             <Link
               href="/volunteer"
-              className="px-4 py-2 text-sm font-semibold text-white border border-white/40
-                         rounded-md hover:bg-white/10 transition-colors"
+              className="px-4 py-2 text-sm font-semibold text-brand-purple border border-brand-purple/40
+                         rounded-md hover:bg-brand-purple/5 transition-colors"
             >
               VOLUNTEER
             </Link>
@@ -200,7 +200,7 @@ export default function Navbar() {
 
           {/* Mobile hamburger */}
           <button
-            className="lg:hidden text-white p-2 rounded-md hover:bg-white/10 transition-colors"
+            className="lg:hidden text-brand-purple p-2 rounded-md hover:bg-brand-purple/5 transition-colors"
             onClick={() => setMobileOpen(!mobileOpen)}
             aria-label={mobileOpen ? "Close menu" : "Open menu"}
             aria-expanded={mobileOpen}
@@ -212,7 +212,7 @@ export default function Navbar() {
         {/* Mobile menu */}
         {mobileOpen && (
           <div
-            className="lg:hidden border-t border-white/20 pb-4"
+            className="lg:hidden border-t border-brand-purple/10 pb-4"
             role="navigation"
             aria-label="Mobile navigation"
           >
@@ -230,7 +230,7 @@ export default function Navbar() {
                       ${
                         isActive(item.href)
                           ? "text-brand-gold"
-                          : "text-white hover:bg-white/10"
+                          : "text-brand-purple hover:bg-brand-purple/5"
                       }
                     `}
                   >
@@ -248,7 +248,7 @@ export default function Navbar() {
                     }
                     aria-expanded={openMenu === item.label}
                     className="w-full flex items-center justify-between px-4 py-3
-                               text-white font-medium hover:bg-white/10 transition-colors"
+                               text-brand-purple font-medium hover:bg-brand-purple/5 transition-colors"
                   >
                     {item.label}
                     <ChevronDown
@@ -260,7 +260,7 @@ export default function Navbar() {
                   </button>
 
                   {openMenu === item.label && (
-                    <div className="bg-white/5 border-l-2 border-brand-gold ml-4">
+                    <div className="bg-brand-purple/5 border-l-2 border-brand-gold ml-4">
                       {item.children!.map((child) => (
                         <Link
                           key={child.href}
@@ -274,7 +274,7 @@ export default function Navbar() {
                             ${
                               isActive(child.href)
                                 ? "text-brand-gold font-semibold"
-                                : "text-white/80 hover:text-white"
+                                : "text-brand-purple/80 hover:text-brand-purple"
                             }
                           `}
                         >
@@ -288,20 +288,20 @@ export default function Navbar() {
             })}
 
             {/* Mobile CTAs */}
-            <div className="flex flex-col gap-2 px-4 pt-4 border-t border-white/20 mt-2">
+            <div className="flex flex-col gap-2 px-4 pt-4 border-t border-brand-purple/10 mt-2">
               <Link
                 href="/get-help"
                 onClick={() => setMobileOpen(false)}
-                className="text-center py-3 text-white border border-white/40 rounded-md
-                           font-semibold hover:bg-white/10 transition-colors"
+                className="text-center py-3 text-brand-purple border border-brand-purple/40 rounded-md
+                           font-semibold hover:bg-brand-purple/5 transition-colors"
               >
                 GET HELP
               </Link>
               <Link
                 href="/volunteer"
                 onClick={() => setMobileOpen(false)}
-                className="text-center py-3 text-white border border-white/40 rounded-md
-                           font-semibold hover:bg-white/10 transition-colors"
+                className="text-center py-3 text-brand-purple border border-brand-purple/40 rounded-md
+                           font-semibold hover:bg-brand-purple/5 transition-colors"
               >
                 VOLUNTEER
               </Link>
