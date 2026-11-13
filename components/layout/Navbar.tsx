@@ -67,14 +67,14 @@ export default function Navbar() {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-brand-purple shadow-lg">
       <div ref={navRef} className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
+        <div className="flex items-center justify-between h-24">
           {/* Logo */}
           <Link
             href="/"
             className="text-white font-bold text-lg tracking-wide hover:text-brand-gold transition-colors"
             aria-label="Park City Initiative — Home"
           >
-            <Image src="/images/pci-logo.png" alt="Park City Initiative Corp." width={318} height={184} priority className="h-14 w-auto" />
+            <Image src="/images/pci-logo.png" alt="Park City Initiative Corp." width={318} height={184} priority className="h-20 w-auto" />
           </Link>
 
           {/* Desktop nav */}
