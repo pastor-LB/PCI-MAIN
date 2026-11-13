@@ -25,9 +25,7 @@ export default function MissionClarity() {
             Our mission is to help transform Bridgeport and neighboring communities by decreasing food insecurity, aiding families in crisis, and breaking generational cycles of poverty.
           </p>
           <p className="mt-4 text-brand-gray">
-            Our vision is a Bridgeport where every child has the support to dream big,
-            every senior is cared for, and every block has neighbors looking out for one
-            another.
+            We envision a community where the heart of God is woven into the very fabric of our city, breaking the cycle of need and fostering resilience and positive change for generations to come.
           </p>
           <div className="mt-6">
             <Button href="/our-story" variant="ghost" className="!px-0">
