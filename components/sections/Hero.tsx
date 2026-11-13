@@ -33,6 +33,21 @@ export default function Hero() {
           <h1 className="text-xs sm:text-sm font-semibold whitespace-nowrap text-brand-purple mb-6">
             Food Pantry & Community Programs in Bridgeport, CT
           </h1>
+          <div className="mb-8">
+            <div className="flex items-center justify-center gap-3 mb-4">
+              <span className="h-px w-10 sm:w-16 bg-brand-gold" aria-hidden="true" />
+              <span className="text-xs sm:text-sm font-bold uppercase tracking-[0.3em] text-brand-gold-dark">
+                Park City Initiative
+              </span>
+              <span className="h-px w-10 sm:w-16 bg-brand-gold" aria-hidden="true" />
+            </div>
+            <p className="font-heading text-3xl sm:text-5xl font-bold leading-tight text-brand-purple max-w-3xl mx-auto">
+              Providing pathways of hope that lead to real solutions
+            </p>
+            <p className="mt-4 font-heading text-lg sm:text-2xl italic text-brand-gold-dark">
+              One Meal, One Child, and One Block at a time
+            </p>
+          </div>
           <Badge variant="gold" className="mb-6">Why We Exist</Badge>
           <p className="text-xl text-brand-gray mb-8 max-w-2xl mx-auto leading-relaxed">
             When one grandmother asked Bishop Jean Williams for help feeding her family,
