@@ -8,7 +8,7 @@ import Badge from "@/components/ui/Badge";
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen bg-white pt-20 pb-12 overflow-hidden flex items-center">
+    <section className="relative min-h-screen bg-white pt-28 pb-12 overflow-hidden flex items-center">
       {/* Subtle background gradient instead of image — TrumpRx style */}
       <div className="absolute inset-0 bg-gradient-to-br from-brand-cream via-white to-white pointer-events-none" />
 
