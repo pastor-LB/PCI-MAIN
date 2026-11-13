@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { ChevronDown, Menu, X } from "lucide-react";
 import { NAV_LINKS, SITE } from "@/lib/constants";
@@ -73,7 +74,7 @@ export default function Navbar() {
             className="text-white font-bold text-lg tracking-wide hover:text-brand-gold transition-colors"
             aria-label="Park City Initiative — Home"
           >
-            Park City Initiative
+            <Image src="/images/pci-logo.png" alt="Park City Initiative Corp." width={318} height={184} priority className="h-14 w-auto" />
           </Link>
 
           {/* Desktop nav */}
