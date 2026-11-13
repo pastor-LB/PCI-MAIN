@@ -22,12 +22,7 @@ export default function MissionClarity() {
             We don&apos;t just feed people. We build futures.
           </h2>
           <p className="mt-4 text-brand-gray">
-            Food insecurity in Bridgeport is rarely an isolated problem — it&apos;s tangled
-            up with the cycles of poverty, instability, and lost opportunity that keep
-            families from moving forward. That&apos;s why Park City Initiative pairs
-            emergency food assistance with youth development and community leadership
-            training, addressing today&apos;s hunger while building tomorrow&apos;s
-            resilience.
+            Our mission is to help transform Bridgeport and neighboring communities by decreasing food insecurity, aiding families in crisis, and breaking generational cycles of poverty.
           </p>
           <p className="mt-4 text-brand-gray">
             Our vision is a Bridgeport where every child has the support to dream big,
