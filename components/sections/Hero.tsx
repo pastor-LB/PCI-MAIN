@@ -50,9 +50,7 @@ export default function Hero() {
           </div>
           <Badge variant="gold" className="mb-6">Why We Exist</Badge>
           <p className="text-xl text-brand-gray mb-8 max-w-2xl mx-auto leading-relaxed">
-            When one grandmother asked Bishop Jean Williams for help feeding her family,
-            a movement began. Today, Park City Initiative answers that same call for thousands
-            of neighbors facing food insecurity, limited opportunity, and disconnected neighborhoods.
+            It began with one mother seeking help to feed her family. When she turned to Bishop Jean Williams, a simple act of compassion sparked a movement. Today, that legacy lives on through the One-Stop Shop Food Pantry and Community Resource Market, helping thousands of neighbors facing hunger, economic hardship, and barriers to opportunity.
           </p>
         </motion.div>
 
