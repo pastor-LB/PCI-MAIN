@@ -30,7 +30,7 @@ export default function Hero() {
           className="mb-12"
         >
           {/* Mission statement first — answer WHY before asking */}
-          <h1 className="text-4xl sm:text-5xl font-bold text-brand-purple mb-6">
+          <h1 className="text-xs sm:text-sm font-semibold whitespace-nowrap text-brand-purple mb-6">
             Food Pantry & Community Programs in Bridgeport, CT
           </h1>
           <Badge variant="gold" className="mb-6">Why We Exist</Badge>
