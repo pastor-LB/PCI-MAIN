@@ -5,7 +5,6 @@ import Hero from "@/components/sections/Hero";
 import ImpactStats from "@/components/sections/ImpactStats";
 import MissionClarity from "@/components/sections/MissionClarity";
 import ProgramCards from "@/components/sections/ProgramCards";
-import TestimonialCarousel from "@/components/sections/TestimonialCarousel";
 import DonateWidget from "@/components/sections/DonateWidget";
 import NewsletterSignup from "@/components/sections/NewsletterSignup";
 
@@ -35,7 +34,6 @@ export default function Home() {
       <ImpactStats />
       <MissionClarity />
       <ProgramCards />
-      <TestimonialCarousel />
       <DonateWidget />
       <NewsletterSignup />
     </>
