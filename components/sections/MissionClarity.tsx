@@ -1,11 +1,12 @@
 import Section from "@/components/ui/Section";
 import Button from "@/components/ui/Button";
+import TestimonialCarousel from "@/components/sections/TestimonialCarousel";
 
 export default function MissionClarity() {
   return (
     <Section background="white" className="!pb-0 sm:!pb-0">
-      <div className="mx-auto max-w-3xl text-center">
-        <div>
+      <div className="grid items-center gap-12 lg:grid-cols-5">
+        <div className="text-center lg:col-span-3">
           <h2 className="font-heading text-3xl font-semibold text-brand-purple sm:text-4xl">
             We don&apos;t just feed people. We build futures.
           </h2>
@@ -26,6 +27,9 @@ export default function MissionClarity() {
               Read Our Full Story →
             </Button>
           </div>
+        </div>
+        <div className="rounded-2xl border-l-4 border-brand-gold bg-brand-cream p-6 shadow-sm lg:col-span-2">
+          <TestimonialCarousel compact />
         </div>
       </div>
     </Section>
