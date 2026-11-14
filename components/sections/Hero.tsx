@@ -92,27 +92,6 @@ export default function Hero() {
           </div>
         </motion.div>
 
-        {/* Proof points with radical whitespace */}
-        <motion.div
-          initial={{ opacity: 0, y: 12 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.4 }}
-          className="grid grid-cols-3 gap-4 sm:gap-8 mb-12 max-w-2xl mx-auto"
-        >
-          <div className="bg-white rounded-lg p-4 sm:p-6 shadow-sm hover:shadow-md transition-shadow">
-            <p className="font-heading text-3xl sm:text-4xl font-bold text-brand-gold">900+</p>
-            <p className="text-sm text-brand-gray mt-2">Families<br />Weekly</p>
-          </div>
-          <div className="bg-white rounded-lg p-4 sm:p-6 shadow-sm hover:shadow-md transition-shadow">
-            <p className="font-heading text-3xl sm:text-4xl font-bold text-brand-gold">220+</p>
-            <p className="text-sm text-brand-gray mt-2">Youth in<br />Programs</p>
-          </div>
-          <div className="bg-white rounded-lg p-4 sm:p-6 shadow-sm hover:shadow-md transition-shadow">
-            <p className="font-heading text-3xl sm:text-4xl font-bold text-brand-gold">27</p>
-            <p className="text-sm text-brand-gray mt-2">Years<br />Strong</p>
-          </div>
-        </motion.div>
-
         {/* Primary CTA — emphasizing monthly giving */}
         <motion.div
           initial={{ opacity: 0, y: 12 }}
