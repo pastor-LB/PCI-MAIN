@@ -65,8 +65,13 @@ export default function Hero() {
             <p className="text-sm font-bold uppercase tracking-widest text-brand-gold mb-4">
               27 Years of Service
             </p>
+            <div className="font-heading text-7xl sm:text-8xl font-bold text-brand-purple leading-none mb-4">
+              1,000,000<span className="text-5xl sm:text-6xl align-super">+</span>
+            </div>
+            <p className="text-2xl sm:text-3xl text-brand-charcoal font-semibold">Meals Distributed in 2025</p>
+            <p className="text-lg text-brand-gray mt-2">And counting, every single day</p>
             {/* Photo gallery: snapshot-style PCI photos */}
-            <div className="mx-auto mb-10 grid w-[calc(100vw-3rem)] max-w-4xl grid-cols-2 gap-5 sm:gap-7 lg:grid-cols-4">
+            <div className="mx-auto mt-10 grid w-[calc(100vw-3rem)] max-w-4xl grid-cols-2 gap-5 sm:gap-7 lg:grid-cols-4">
               {[
                 { src: "/images/community-market.png", alt: "Volunteers in yellow vests helping neighbors shop at the Community Market", caption: "Community Market", tilt: "-rotate-2", fit: "object-cover" },
                 { src: "/images/financial-literacy.png", alt: "A neighbor receiving a Financial Literacy Course certificate of completion", caption: "Financial Literacy", tilt: "rotate-2", fit: "object-cover" },
@@ -84,11 +89,6 @@ export default function Hero() {
                 </figure>
               ))}
             </div>
-            <div className="font-heading text-7xl sm:text-8xl font-bold text-brand-purple leading-none mb-4">
-              1,000,000<span className="text-5xl sm:text-6xl align-super">+</span>
-            </div>
-            <p className="text-2xl sm:text-3xl text-brand-charcoal font-semibold">Meals Distributed in 2025</p>
-            <p className="text-lg text-brand-gray mt-2">And counting, every single day</p>
           </div>
         </motion.div>
 
