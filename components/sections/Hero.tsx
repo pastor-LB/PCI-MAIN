@@ -65,6 +65,24 @@ export default function Hero() {
             <p className="text-sm font-bold uppercase tracking-widest text-brand-gold mb-4">
               27 Years of Service
             </p>
+            <div className="mx-auto mb-10 grid w-[calc(100vw-3rem)] max-w-4xl grid-cols-2 gap-5 sm:gap-7 lg:grid-cols-4">
+              {[
+                { src: "/images/community-market.png", alt: "Volunteers in yellow vests helping neighbors shop at the Community Market", caption: "Community Market", tilt: "-rotate-2", fit: "object-cover" },
+                { src: "/images/financial-literacy.png", alt: "A neighbor receiving a Financial Literacy Course certificate of completion", caption: "Financial Literacy", tilt: "rotate-2", fit: "object-cover" },
+                { src: "/images/health-screening.jpg", alt: "Parish nurses providing health screenings for the community", caption: "Health Screenings", tilt: "-rotate-1", fit: "object-cover scale-110" },
+                { src: "/images/kids-bus.png", alt: "Three young girls smiling in front of the colorful Park City Initiative bus", caption: "Youth Programs", tilt: "rotate-1", fit: "object-cover" },
+              ].map((photo) => (
+                <figure
+                  key={photo.src}
+                  className={`${photo.tilt} rounded-md bg-white p-2 pb-3 shadow-xl ring-1 ring-brand-purple/10 transition duration-300 hover:z-10 hover:rotate-0 hover:scale-105`}
+                >
+                  <div className="relative aspect-[4/3] overflow-hidden rounded-sm">
+                    <Image src={photo.src} alt={photo.alt} fill sizes="(min-width: 1024px) 220px, 45vw" className={photo.fit} />
+                  </div>
+                  <figcaption className="mt-2 font-heading text-sm italic text-brand-purple">{photo.caption}</figcaption>
+                </figure>
+              ))}
+            </div>
             <div className="font-heading text-7xl sm:text-8xl font-bold text-brand-purple leading-none mb-4">
               1,000,000<span className="text-5xl sm:text-6xl align-super">+</span>
             </div>
