@@ -6,7 +6,6 @@ import ImpactStats from "@/components/sections/ImpactStats";
 import MissionClarity from "@/components/sections/MissionClarity";
 import ProgramCards from "@/components/sections/ProgramCards";
 import TestimonialCarousel from "@/components/sections/TestimonialCarousel";
-import PartnerLogos from "@/components/sections/PartnerLogos";
 import DonateWidget from "@/components/sections/DonateWidget";
 import NewsletterSignup from "@/components/sections/NewsletterSignup";
 
@@ -37,7 +36,6 @@ export default function Home() {
       <MissionClarity />
       <ProgramCards />
       <TestimonialCarousel />
-      <PartnerLogos />
       <DonateWidget />
       <NewsletterSignup />
     </>
