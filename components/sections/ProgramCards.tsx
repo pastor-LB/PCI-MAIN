@@ -35,7 +35,7 @@ const programs = [
 
 export default function ProgramCards() {
   return (
-    <Section background="white">
+    <Section background="white" className="!pt-10 sm:!pt-12">
       <div className="text-center">
         <h2 className="font-heading text-3xl font-semibold text-brand-purple sm:text-4xl">
           Three Programs. One Mission.
