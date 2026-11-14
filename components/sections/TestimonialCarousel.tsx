@@ -29,7 +29,7 @@ const testimonials = [
   },
 ];
 
-export default function TestimonialCarousel() {
+export default function TestimonialCarousel({ compact = false }: { compact?: boolean }) {
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true });
   const [selectedIndex, setSelectedIndex] = useState(0);
   const [isHovering, setIsHovering] = useState(false);
@@ -52,20 +52,26 @@ export default function TestimonialCarousel() {
     return () => clearInterval(interval);
   }, [emblaApi, isHovering]);
 
-  return (
-    <Section background="white">
-      <h2 className="text-center font-heading text-3xl font-semibold text-brand-purple sm:text-4xl">
+  const content = (
+    <>
+      <h2
+        className={`text-center font-heading font-semibold text-brand-purple ${
+          compact ? "text-2xl" : "text-3xl sm:text-4xl"
+        }`}
+      >
         Voices from Our Community
       </h2>
       <div
-        className="mt-10"
+        className={compact ? "mt-6" : "mt-10"}
         onMouseEnter={() => setIsHovering(true)}
         onMouseLeave={() => setIsHovering(false)}
       >
         <div className="overflow-hidden" ref={emblaRef}>
           <div className="flex">
             {testimonials.map((t) => (
-              <div key={t.name} className="min-w-0 flex-[0_0_100%] px-2 sm:flex-[0_0_50%] lg:flex-[0_0_33.333%]">
+              <div key={t.name} className={`min-w-0 flex-[0_0_100%] px-2 ${
+                  compact ? "" : "sm:flex-[0_0_50%] lg:flex-[0_0_33.333%]"
+                }`}>
                 <div className="flex h-full flex-col rounded-2xl bg-brand-gray-light p-6 shadow-md">
                   <Quote className="h-7 w-7 text-brand-gold" aria-hidden="true" />
                   <p className="mt-3 flex-1 italic text-brand-charcoal">&ldquo;{t.quote}&rdquo;</p>
@@ -123,6 +129,10 @@ export default function TestimonialCarousel() {
           </Link>
         </div>
       </div>
-    </Section>
+    </>
   );
+
+  if (compact) return content;
+
+  return <Section background="white">{content}</Section>;
 }
