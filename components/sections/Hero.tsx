@@ -65,6 +65,7 @@ export default function Hero() {
             <p className="text-sm font-bold uppercase tracking-widest text-brand-gold mb-4">
               27 Years of Service
             </p>
+            {/* Photo gallery: snapshot-style PCI photos */}
             <div className="mx-auto mb-10 grid w-[calc(100vw-3rem)] max-w-4xl grid-cols-2 gap-5 sm:gap-7 lg:grid-cols-4">
               {[
                 { src: "/images/community-market.png", alt: "Volunteers in yellow vests helping neighbors shop at the Community Market", caption: "Community Market", tilt: "-rotate-2", fit: "object-cover" },
