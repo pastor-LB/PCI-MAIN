@@ -1,19 +1,10 @@
-import Image from "next/image";
 import Section from "@/components/ui/Section";
 import Button from "@/components/ui/Button";
 
 export default function MissionClarity() {
   return (
     <Section background="white">
-      <div className="grid items-center gap-10 lg:grid-cols-2">
-        <div className="relative h-72 overflow-hidden rounded-2xl shadow-lg sm:h-96">
-          <Image
-            src="/images/pci-volunteers.jpg"
-            alt="PCI volunteers at the food pantry, smiling while helping the community"
-            fill
-            className="object-cover"
-          />
-        </div>
+      <div className="mx-auto max-w-3xl text-center">
         <div>
           <span className="text-sm font-bold uppercase tracking-wide text-brand-gold">
             Our Mission
