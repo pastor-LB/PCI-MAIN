@@ -6,12 +6,12 @@ export default function MissionClarity() {
     <Section background="white">
       <div className="mx-auto max-w-3xl text-center">
         <div>
-          <span className="text-sm font-bold uppercase tracking-wide text-brand-gold">
-            Our Mission
-          </span>
-          <h2 className="mt-2 font-heading text-3xl font-semibold text-brand-purple sm:text-4xl">
+          <h2 className="font-heading text-3xl font-semibold text-brand-purple sm:text-4xl">
             We don&apos;t just feed people. We build futures.
           </h2>
+          <span className="mt-6 block text-sm font-bold uppercase tracking-wide text-brand-gold">
+            Our Mission
+          </span>
           <p className="mt-4 text-brand-gray">
             Our mission is to help transform Bridgeport and neighboring communities by decreasing food insecurity, aiding families in crisis, and breaking generational cycles of poverty.
           </p>
