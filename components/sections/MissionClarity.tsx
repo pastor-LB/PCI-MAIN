@@ -3,7 +3,7 @@ import Button from "@/components/ui/Button";
 
 export default function MissionClarity() {
   return (
-    <Section background="white">
+    <Section background="white" className="!pb-0 sm:!pb-0">
       <div className="mx-auto max-w-3xl text-center">
         <div>
           <h2 className="font-heading text-3xl font-semibold text-brand-purple sm:text-4xl">
