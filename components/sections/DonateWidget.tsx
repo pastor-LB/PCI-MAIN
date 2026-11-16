@@ -7,7 +7,7 @@ import Button from "@/components/ui/Button";
 const tiers = [
   {
     amount: 25,
-    description: "Feeds a child at S.C.A.M.P. for a week",
+    description: "Feeds a child at summer camp for a week",
   },
   {
     amount: 75,
