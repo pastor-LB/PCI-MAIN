@@ -24,41 +24,38 @@ const breadcrumbItems = [
 const programs = [
   {
     title: "One Meal",
-    subtitle: "Food Pantry & Senior Support",
+    subtitle: "Community Market & Senior Care Boxes",
     description:
-      "The Bishop Jean Williams Food Pantry, Senior Care Boxes, and Mobile Pantry deliver free, nutritious food to families and seniors across Bridgeport.",
+      "The Bishop Jean Williams Food Pantry, Senior Care Boxes, and Mobile Pantry provide free, nutritious food to families and seniors across Bridgeport.",
     details: [
       "1,000,000+ meals distributed annually",
-      "900+ families served weekly",
+      "750+ families served weekly",
       "5,650 senior care boxes delivered yearly",
-      "3 distribution channels (walk-in, drive-thru, mobile)",
+      "3 distribution channels (walk-in, senior deliveries, mobile pantry)",
     ],
     image: "https://images.unsplash.com/photo-1593113646773-028c64a8f1b1?w=900&q=80",
     href: "/one-meal",
   },
   {
     title: "One Child",
-    subtitle: "Youth Development & Education",
+    subtitle: "Life Skills Training for Children/Youth",
     description:
-      "Kidz Academy, Kidz Mobile, and S.C.A.M.P. give children life-skills training, mentorship, and a safe place to learn and grow.",
+      "Park City Kidz Mobile and Summer Camp Experience give children life-skills training, mentorship, and a safe place to learn and grow.",
     details: [
       "220+ children in life-skills training programs",
-      "After-school tutoring & mentorship",
-      "S.C.A.M.P. free summer camp for all ages",
-      "College prep & career readiness support",
+      "60 Kids attend Inspire Sports Camp",
     ],
     image: "https://images.unsplash.com/photo-1529390079861-591de354faf5?w=900&q=80",
     href: "/one-child",
   },
   {
     title: "One Block",
-    subtitle: "Community Transformation & Leadership",
+    subtitle: "Bridging Generations, Building Leaders. Transforming Neighborhoods.",
     description:
-      "Park City Youth ACTS, Adopt-A-Block, and career readiness training empower young leaders to transform their own neighborhoods.",
+      "Seniors mentoring youth, building leaders, and creating community change.",
     details: [
-      "Community-led neighborhood cleanup initiatives",
+      "Neighborhood cleanup initiatives",
       "Youth leadership training programs",
-      "Job readiness & employment pathways",
       "Volunteer-powered block transformation",
     ],
     image: "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=900&q=80",
@@ -94,6 +91,9 @@ export default function ProgramsPage() {
             to address immediate needs while building long-term resilience and opportunity
             in Bridgeport families and neighborhoods. Each program is designed to complement
             the others, creating a holistic approach to community transformation.
+          </p>
+          <p className="mt-6 font-heading text-2xl font-semibold italic text-brand-gold">
+            One Meal, One Child, One Block at a time!
           </p>
         </div>
       </Section>
