@@ -7,7 +7,7 @@ import PageHero from "@/components/sections/PageHero";
 import Section from "@/components/ui/Section";
 import Card from "@/components/ui/Card";
 import StatCard from "@/components/ui/StatCard";
-import { Briefcase, ShieldCheck, Users2 } from "lucide-react";
+import { Users2, Sprout, Eye } from "lucide-react";
 
 export const metadata: Metadata = generatePageMetadata({
   title: "Youth Community Leadership & Workforce Development | PCY ACTS",
@@ -20,24 +20,6 @@ const breadcrumbItems = [
   { name: "Home", href: "/" },
   { name: "Programs", href: "/programs" },
   { name: "One Block", href: "/one-block" },
-];
-
-const offerings = [
-  {
-    title: "Career Readiness",
-    description: "Workforce training, resume building, and job-shadowing for Bridgeport youth.",
-    icon: Briefcase,
-  },
-  {
-    title: "Adopt-A-Block",
-    description: "Neighborhood cleanups that transform blocks and build civic pride.",
-    icon: ShieldCheck,
-  },
-  {
-    title: "Leadership Training",
-    description: "Hands-on leadership development through Park City Youth ACTS.",
-    icon: Users2,
-  },
 ];
 
 const stats = [
@@ -58,21 +40,92 @@ export default function OneBlockPage() {
           ),
         }}
       />
-      <PageHero title="Engage. Transform. Serve. One Block at a Time." tall />
+      <PageHero title="Bridging Generations. Building Leaders. Transforming Neighborhoods." tall />
       <Breadcrumbs items={breadcrumbItems} />
 
       <Section background="white">
-        <div className="grid gap-8 sm:grid-cols-3">
-          {offerings.map((offering) => {
-            const Icon = offering.icon;
-            return (
-              <Card key={offering.title} borderColor="gold">
-                <Icon className="h-9 w-9 text-brand-purple" aria-hidden="true" />
-                <h3 className="mt-3 text-lg font-semibold text-brand-charcoal">{offering.title}</h3>
-                <p className="mt-2 text-sm text-brand-gray">{offering.description}</p>
-              </Card>
-            );
-          })}
+        <div className="mx-auto max-w-3xl">
+          <div className="flex items-center gap-3">
+            <span className="flex h-12 w-12 items-center justify-center rounded-full bg-brand-gold/15">
+              <Users2 className="h-6 w-6 text-brand-purple" aria-hidden="true" />
+            </span>
+            <span className="text-sm font-bold uppercase tracking-widest text-brand-gold-dark">
+              One Block
+            </span>
+          </div>
+          <h2 className="mt-4 font-heading text-3xl font-semibold text-brand-purple sm:text-4xl">
+            Where Wisdom Meets Youthful Energy to Create Lasting Community Change.
+          </h2>
+          <div className="mt-6 space-y-4 text-lg text-brand-gray">
+            <p>
+              What happens when the wisdom and life experience of older adults meet the energy, creativity,
+              and fresh ideas of young people? Communities grow stronger, relationships are built, and
+              meaningful change happens.
+            </p>
+            <p>
+              One Block is a cross-generational mentorship and neighborhood transformation initiative that
+              brings together adults ages 60 and older with teens to work side by side on projects that
+              improve the places they call home.
+            </p>
+            <p>
+              Through this unique partnership, older adults serve as mentors, sharing their knowledge, life
+              experiences, skills, and guidance while helping teens develop leadership abilities, confidence,
+              teamwork, and a deeper sense of civic responsibility.
+            </p>
+            <p>
+              Together, each year, these generations will identify, develop, and implement a neighborhood
+              improvement project focused on environmental stewardship, anti-blight efforts, and neighborhood
+              beautification. Whether revitalizing a neglected city block, organizing a neighborhood cleanup,
+              or creating a more welcoming community space, participants work together to turn ideas into
+              visible, lasting improvements.
+            </p>
+          </div>
+        </div>
+      </Section>
+
+      <Section background="cream">
+        <div className="mx-auto max-w-3xl">
+          <div className="flex items-center gap-3">
+            <span className="flex h-12 w-12 items-center justify-center rounded-full bg-brand-purple/10">
+              <Sprout className="h-6 w-6 text-brand-purple" aria-hidden="true" />
+            </span>
+            <span className="text-sm font-bold uppercase tracking-widest text-brand-gold-dark">
+              More Than a Project
+            </span>
+          </div>
+          <h2 className="mt-4 font-heading text-3xl font-semibold text-brand-purple sm:text-4xl">
+            A Legacy in the Making.
+          </h2>
+          <div className="mt-6 space-y-4 text-lg text-brand-gray">
+            <p>
+              One Block is about more than improving physical spaces. It is about strengthening relationships,
+              bridging generational gaps, preserving valuable wisdom, and empowering young people to become
+              engaged, responsible community leaders.
+            </p>
+            <p>
+              Each year&apos;s accomplishments will culminate in a special recognition presentation at our
+              Annual Banquet, where participants will showcase their projects, celebrate their achievements,
+              and share the impact of their collaboration.
+            </p>
+          </div>
+        </div>
+      </Section>
+
+      <Section background="white">
+        <div className="mx-auto max-w-3xl">
+          <div className="flex items-center gap-3">
+            <span className="flex h-12 w-12 items-center justify-center rounded-full bg-brand-gold/15">
+              <Eye className="h-6 w-6 text-brand-purple" aria-hidden="true" />
+            </span>
+            <span className="text-sm font-bold uppercase tracking-widest text-brand-gold-dark">
+              Our Vision
+            </span>
+          </div>
+          <p className="mt-6 border-l-4 border-brand-gold pl-5 font-heading text-xl italic text-brand-purple sm:text-2xl">
+            We believe every generation has something valuable to contribute. When generations come together
+            with a shared purpose, neighborhoods become stronger, young people become empowered, and
+            communities are transformed&mdash;one relationship, one project, and One Block at a time.
+          </p>
         </div>
       </Section>
 
