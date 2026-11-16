@@ -46,7 +46,7 @@ export default function OneMealPage() {
           ),
         }}
       />
-      <PageHero title="No One in Bridgeport Should Go to Bed Hungry." tall />
+      <PageHero title="“We started by giving a few bags of groceries. Today, we open our doors to our city.”" tall />
       <Breadcrumbs items={breadcrumbItems} />
 
       <Section background="white">
