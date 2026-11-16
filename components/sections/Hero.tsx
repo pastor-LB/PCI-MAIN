@@ -76,7 +76,7 @@ export default function Hero() {
                 { src: "/images/community-market.png", alt: "Volunteers in yellow vests helping neighbors shop at the Community Market", caption: "Community Market", tilt: "-rotate-2", fit: "object-cover" },
                 { src: "/images/financial-literacy.png", alt: "A neighbor receiving a Financial Literacy Course certificate of completion", caption: "Financial Literacy", tilt: "rotate-2", fit: "object-cover" },
                 { src: "/images/health-screening.jpg", alt: "Parish nurses providing health screenings for the community", caption: "Health Screenings", tilt: "-rotate-1", fit: "object-cover scale-110" },
-                { src: "/images/kids-bus.png", alt: "Three young girls smiling in front of the colorful Park City Initiative bus", caption: "Youth Programs", tilt: "rotate-1", fit: "object-cover" },
+                { src: "/images/park-city-kidz.jpg", alt: "A Park City Kidz participant working at an interactive learning exhibit", caption: "Youth Programs", tilt: "rotate-1", fit: "object-cover object-[50%_30%]" },
               ].map((photo) => (
                 <figure
                   key={photo.src}
