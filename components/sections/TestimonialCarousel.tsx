@@ -17,9 +17,9 @@ const testimonials = [
   },
   {
     quote:
-      "S.C.A.M.P. gave my son somewhere safe and fun to go all summer, and he came home talking about his goals for the first time.",
+      "Summer camp gave my son somewhere safe and fun to go all summer, and he came home talking about his goals for the first time.",
     name: "Darnell W.",
-    role: "Parent, S.C.A.M.P. Family",
+    role: "Parent, Summer Camp Family",
   },
   {
     quote:
