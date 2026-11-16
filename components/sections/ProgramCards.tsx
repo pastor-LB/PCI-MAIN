@@ -15,7 +15,7 @@ const programs = [
   {
     title: "One Child",
     description:
-      "Park City Kidz Mobile, and S.C.A.M.P. give children life-skills training, mentorship, and a safe place to grow.",
+      "Through Park City Kidz Mobile and our summer camp experiences, children gain valuable life skills, caring mentorship, and opportunities to learn, grow, and thrive in a safe and nurturing environment.",
     icon: GraduationCap,
     href: "/one-child",
     border: "purple" as const,
