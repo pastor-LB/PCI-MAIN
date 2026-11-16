@@ -13,7 +13,7 @@ export default function StoryTimeline({ milestones }: { milestones: TimelineMile
       {milestones.map((milestone) => {
         const Icon = milestone.icon;
         return (
-          <li key={milestone.year} className="mb-10 ml-2">
+          <li key={`${milestone.year}-${milestone.title}`} className="mb-10 ml-2">
             <span className="absolute -left-[9px] mt-1.5 h-4 w-4 rounded-full border-2 border-brand-gold bg-white" />
             <div className="flex items-center gap-2">
               {Icon ? <Icon className="h-5 w-5 text-brand-gold" aria-hidden="true" /> : null}
