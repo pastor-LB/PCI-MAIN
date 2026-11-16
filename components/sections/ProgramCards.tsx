@@ -7,8 +7,7 @@ const programs = [
   {
     title: "One Meal",
     description:
-      "The Bishop Jean Williams Food Pantry and Community Market provide free groceries, senior care boxes, and mobile pantry deliveries across Bridgeport.",
-    stat: "1,000,000+ meals served annually",
+      "As one of the largest food pantries in the region, we are dedicated to ensuring that no one in our community goes to bed hungry.",
     icon: UtensilsCrossed,
     href: "/one-meal",
     border: "gold" as const,
@@ -16,8 +15,7 @@ const programs = [
   {
     title: "One Child",
     description:
-      "Kidz Academy, Kidz Mobile, and S.C.A.M.P. give children life-skills training, mentorship, and a safe place to grow.",
-    stat: "220+ children in youth programs",
+      "Park City Kidz Mobile, and S.C.A.M.P. give children life-skills training, mentorship, and a safe place to grow.",
     icon: GraduationCap,
     href: "/one-child",
     border: "purple" as const,
@@ -25,8 +23,7 @@ const programs = [
   {
     title: "One Block",
     description:
-      "Park City Youth ACTS trains young leaders in career readiness and organizes Adopt-A-Block cleanups that transform neighborhoods.",
-    stat: "241+ active volunteers",
+      "Bridging Generations. Building Leaders. Transforming Neighborhoods.",
     icon: Building2,
     href: "/one-block",
     border: "charcoal" as const,
@@ -49,9 +46,6 @@ export default function ProgramCards() {
               <Icon className="h-10 w-10 text-brand-purple" aria-hidden="true" />
               <h3 className="mt-4 text-xl font-semibold text-brand-charcoal">{program.title}</h3>
               <p className="mt-2 text-sm text-brand-gray">{program.description}</p>
-              <span className="mt-4 inline-block rounded-full bg-brand-gray-light px-3 py-1 text-xs font-semibold text-brand-purple">
-                {program.stat}
-              </span>
               <div className="mt-4">
                 <Link
                   href={program.href}
