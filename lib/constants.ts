@@ -49,6 +49,7 @@ export const NAV_LINKS = [
     label: "Programs",
     href: "/programs",
     children: [
+      { label: "All Programs", href: "/programs" },
       { label: "One Meal (Food Pantry)", href: "/one-meal" },
       { label: "One Child (Youth Programs)", href: "/one-child" },
       { label: "One Block (Community Acts)", href: "/one-block" },
