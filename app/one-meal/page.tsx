@@ -290,11 +290,6 @@ export default function OneMealPage() {
           <Card borderColor="gold">
             <h3 className="text-lg font-semibold text-brand-charcoal">Visit the Community Market</h3>
             <ul className="mt-4 space-y-2 text-sm text-brand-gray">
-              {marketSchedule.map((s) => (
-                <li key={s.day}>
-                  {s.day}: {s.hours}
-                </li>
-              ))}
               <li>New shopper sign-up: Mondays, 10:00 am – 2:00 pm</li>
               <li>{SITE.address.full}</li>
               <li>{SITE.phoneDisplay}</li>
