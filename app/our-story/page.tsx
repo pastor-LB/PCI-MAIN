@@ -64,22 +64,22 @@ export default function OurStoryPage() {
           <div className="space-y-4 text-lg text-brand-gray">
             <p>
               In 1999, Bishop Jean Williams made a simple request to her daughter, Mary Green:
-              <span className="font-semibold text-brand-charcoal"> "Help me feed the hungry families in our city."</span>
-              That conversation sparked a movement that has transformed Bridgeport.
+              <span className="font-semibold text-brand-charcoal"> "Help me get more food to feed the families that are coming to me for help."</span>
+              {" "}That conversation sparked a movement that has transformed Bridgeport.
             </p>
             <p>
               What began as one woman's compassion for her neighbors has grown into a comprehensive,
               multi-program organization serving thousands of families annually. From the Bishop Jean Williams
-              Food Pantry to youth development programs like S.C.A.M.P. and Kidz Academy, to community
-              transformation through Adopt-A-Block initiatives—Park City Initiative has become a
+              Food Pantry and Park City Kidz Mobile to youth development programs, community transformation
+              through Adopt-A-Block initiatives, and expanded access to resources through our One-Stop Shop
+              Community Market, Park City Initiative Corp has become a
               <span className="font-semibold text-brand-charcoal"> trusted cornerstone of Bridgeport's social fabric.</span>
             </p>
             <p>
-              Today, we serve 900+ families every week, distribute 1 million+ meals annually,
-              provide education and mentorship to hundreds of young people, and actively transform
-              entire city blocks through volunteer action. Yet our mission remains unchanged:
+              Today, we serve more than 750 families every week and distribute over one million meals
+              annually. Yet, our mission remains unchanged:
               <span className="font-semibold text-brand-purple"> to meet basic needs today, restore hope for tomorrow,
-              and transform lives forever.</span>
+              and equip families with tools to improve their quality of life.</span>
             </p>
           </div>
         </div>
