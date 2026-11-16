@@ -6,10 +6,9 @@ import { SITE } from "@/lib/constants";
 import Breadcrumbs from "@/components/ui/Breadcrumbs";
 import PageHero from "@/components/sections/PageHero";
 import Section from "@/components/ui/Section";
-import Card from "@/components/ui/Card";
 import CTABanner from "@/components/sections/CTABanner";
 import Button from "@/components/ui/Button";
-import { GraduationCap, Truck, Sun } from "lucide-react";
+import { Truck, Sun } from "lucide-react";
 
 export const metadata: Metadata = generatePageMetadata({
   title: "Youth Programs Bridgeport CT | Kidz Academy & Summer Camp",
@@ -39,42 +38,75 @@ export default function OneChildPage() {
       <PageHero title="Building Tomorrow's Leaders. Starting Today." tall />
       <Breadcrumbs items={breadcrumbItems} />
 
-      <Section background="cream" padding="md">
-        <blockquote className="mx-auto max-w-2xl text-center font-heading text-2xl italic text-brand-purple">
-          &ldquo;It is easier to build strong children than to repair broken men and
-          women.&rdquo;
-          <footer className="mt-3 text-base text-brand-gray">— Bill Wilson, Metro World Child</footer>
-        </blockquote>
-      </Section>
-
       <Section background="white">
-        <div className="grid gap-8 sm:grid-cols-3">
-          <Card borderColor="gold">
-            <GraduationCap className="h-9 w-9 text-brand-purple" aria-hidden="true" />
-            <h3 className="mt-3 text-lg font-semibold text-brand-charcoal">Kidz Academy</h3>
-            <p className="mt-2 text-sm text-brand-gray">
-              After-school life-skills training and academic mentorship for Bridgeport youth.
+        <div className="mx-auto max-w-3xl">
+          <div className="flex items-center gap-3">
+            <span className="flex h-12 w-12 items-center justify-center rounded-full bg-brand-gold/15">
+              <Truck className="h-6 w-6 text-brand-purple" aria-hidden="true" />
+            </span>
+            <span className="text-sm font-bold uppercase tracking-widest text-brand-gold-dark">
+              Park City Kidz Mobile
+            </span>
+          </div>
+          <h2 className="mt-4 font-heading text-3xl font-semibold text-brand-purple sm:text-4xl">
+            Planting Seeds for a Brighter Future
+          </h2>
+          <div className="mt-6 space-y-4 text-lg text-brand-gray">
+            <p>
+              Every child deserves the opportunity to discover their potential, develop confidence, and build
+              a strong foundation for life. Park City Kidz Mobile brings those opportunities directly into the
+              community through a dynamic, interactive after-school experience that makes learning meaningful,
+              memorable, and fun.
             </p>
-          </Card>
-          <Card borderColor="purple">
-            <Truck className="h-9 w-9 text-brand-purple" aria-hidden="true" />
-            <h3 className="mt-3 text-lg font-semibold text-brand-charcoal">Kidz Mobile</h3>
-            <p className="mt-2 text-sm text-brand-gray">
-              Mobile outreach bringing programming directly into Bridgeport neighborhoods.
+            <p>
+              Through drama, comedy, music, games, and engaging life lessons, children develop important
+              values, strengthen their decision-making skills, build positive relationships, and discover the
+              power of making good choices. Along the way, we plant seeds of faith, character, personal growth,
+              and community responsibility.
             </p>
-          </Card>
-          <Card borderColor="charcoal">
-            <Sun className="h-9 w-9 text-brand-purple" aria-hidden="true" />
-            <h3 className="mt-3 text-lg font-semibold text-brand-charcoal">S.C.A.M.P.</h3>
-            <p className="mt-2 text-sm text-brand-gray">
-              A summer camp giving children a safe, fun, and enriching place to grow each
-              summer.
+            <p>
+              But we&apos;re doing more than teaching life skills&mdash;we&apos;re helping shape lives.
+              We&apos;re creating opportunities for children to believe in themselves, recognize their worth,
+              make positive choices, and envision a future filled with possibilities.
             </p>
-          </Card>
+          </div>
+          <p className="mt-8 border-l-4 border-brand-gold pl-5 font-heading text-xl italic text-brand-purple sm:text-2xl">
+            Because when we invest in children today, we help build stronger individuals, families, and
+            communities tomorrow.
+          </p>
         </div>
       </Section>
 
       <Section background="cream">
+        <div className="mx-auto max-w-3xl">
+          <div className="flex items-center gap-3">
+            <span className="flex h-12 w-12 items-center justify-center rounded-full bg-brand-purple/10">
+              <Sun className="h-6 w-6 text-brand-purple" aria-hidden="true" />
+            </span>
+            <span className="text-sm font-bold uppercase tracking-widest text-brand-gold-dark">
+              Overnight Summer Camp
+            </span>
+          </div>
+          <h2 className="mt-4 font-heading text-3xl font-semibold text-brand-purple sm:text-4xl">
+            A Week of Adventure. A Lifetime of Memories.
+          </h2>
+          <div className="mt-6 space-y-4 text-lg text-brand-gray">
+            <p>
+              For many children, the opportunity to experience life beyond their everyday surroundings can
+              open a world of possibilities. Each summer, we give children the chance to leave the city behind,
+              board a bus to Pennsylvania, and embark on an unforgettable week of overnight summer camp.
+            </p>
+            <p>
+              Away from familiar routines, children experience new adventures, build lasting friendships,
+              explore new interests, and discover things about themselves they may never have known. In a
+              safe, nurturing, and enriching environment, they have the freedom to laugh, learn, grow, and
+              simply enjoy being children.
+            </p>
+          </div>
+        </div>
+      </Section>
+
+      <Section background="white">
         <h2 className="text-center font-heading text-3xl font-semibold text-brand-purple">
           Photo Gallery
         </h2>
