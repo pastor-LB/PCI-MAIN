@@ -41,25 +41,46 @@ const newsArticles: Record<
     category: "Program Updates",
     date: "June 15, 2026",
     image: "https://images.unsplash.com/photo-1427504494785-cdcd6c6dbdea?w=1200&q=80",
-    content: `<p>As the year begins, our Park City Kidz Afterschool and Summer Camp programs welcome 200+ children into life-skills training and mentorship programs.</p>
+    content: `<p class="text-xl leading-relaxed text-brand-charcoal">As the year begins, our Park City Kidz Afterschool and Summer Camp programs welcome <strong class="text-brand-purple">200+ children</strong> into life-skills training and mentorship programs.</p>
 
-<h3>Spring &amp; Fall: Taking Hope and Opportunity into the Neighborhood</h3>
-
+<section class="mt-12 overflow-hidden rounded-2xl border border-brand-gold/30 bg-brand-cream shadow-sm">
+<div class="bg-brand-gold px-6 py-5 sm:px-8">
+<p class="!mt-0 text-xs font-bold uppercase tracking-[0.25em] text-brand-purple-dark">Park City Kidz Mobile</p>
+<h2 class="mt-1 font-heading text-3xl font-bold text-white sm:text-4xl">Spring &amp; Fall</h2>
+<p class="!mt-1 font-heading text-lg italic text-brand-purple-dark">Taking Hope and Opportunity into the Neighborhood</p>
+</div>
+<div class="px-6 py-6 sm:px-8">
+<div class="flex flex-wrap gap-2">
+<span class="rounded-full bg-white px-3 py-1 text-sm font-semibold text-brand-purple shadow-sm">May · June · September</span>
+<span class="rounded-full bg-white px-3 py-1 text-sm font-semibold text-brand-purple shadow-sm">Ages 5–12</span>
+<span class="rounded-full bg-white px-3 py-1 text-sm font-semibold text-brand-purple shadow-sm">Home visits every 2 weeks</span>
+</div>
 <p>During the spring and fall seasons, Park City Kidz Mobile brings encouragement, opportunity, and life-skills development directly into some of Bridgeport's most underserved neighborhoods. Throughout May, June, and September, our mobile outreach team connects with children ages 5–12 through engaging, interactive lessons, games, drama, and creative activities designed to build confidence, strengthen character, encourage positive decision-making, and help children recognize their God-given potential.</p>
-
 <p>But our commitment doesn't end with the children's activities. Every two weeks, our trained and compassionate team members make home visits to connect with participating families, build meaningful relationships, identify needs, and provide essential resources and support. By reaching beyond the mobile site experience and into the home, we are able to encourage not only the child, but the entire family.</p>
+<p>Your support helps us bring more than a program into these neighborhoods. It helps us bring caring relationships, practical resources, encouragement, and opportunities for children and families to thrive. Whether through giving, volunteering, or sharing your talents, you can help us make a difference; <strong class="text-brand-purple">one child, one family, and one neighborhood at a time.</strong></p>
+</div>
+</section>
 
-<p>Your support helps us bring more than a program into these neighborhoods. It helps us bring caring relationships, practical resources, encouragement, and opportunities for children and families to thrive. Whether through giving, volunteering, or sharing your talents, you can help us make a difference; one child, one family, and one neighborhood at a time.</p>
-
-<h3>Summer: A Week of Adventure. A Lifetime of Memories.</h3>
-
+<section class="mt-12 overflow-hidden rounded-2xl border border-brand-purple/20 bg-brand-cream shadow-sm">
+<div class="bg-brand-purple px-6 py-5 sm:px-8">
+<p class="!mt-0 text-xs font-bold uppercase tracking-[0.25em] text-brand-gold-light">Overnight Summer Camp</p>
+<h2 class="mt-1 font-heading text-3xl font-bold text-white sm:text-4xl">Summer</h2>
+<p class="!mt-1 font-heading text-lg italic text-white/85">A Week of Adventure. A Lifetime of Memories.</p>
+</div>
+<div class="px-6 py-6 sm:px-8">
+<div class="flex flex-wrap gap-2">
+<span class="rounded-full bg-white px-3 py-1 text-sm font-semibold text-brand-purple shadow-sm">One full week</span>
+<span class="rounded-full bg-white px-3 py-1 text-sm font-semibold text-brand-purple shadow-sm">Overnight camp</span>
+<span class="rounded-full bg-white px-3 py-1 text-sm font-semibold text-brand-purple shadow-sm">Bus trip to Pennsylvania</span>
+</div>
 <p>For many children, the opportunity to experience life beyond their everyday surroundings can open the door to a world of possibilities. Each summer, Park City Initiative Corp gives children the chance to step outside the familiar, leave the city behind, board a bus to Pennsylvania, and embark on an unforgettable week of overnight summer camp.</p>
-
 <p>For some, it may be their first time traveling away from home, exploring new surroundings, or discovering just how much they are capable of. Beyond the excitement and adventure, camp provides opportunities to build lasting friendships, develop confidence and independence, explore new interests, and create memories they will carry for years to come.</p>
-
 <p>In a safe, nurturing, and enriching environment, children are free to laugh, learn, explore, take on new challenges, and simply enjoy being children. They return home with more than stories of a great summer experience; they return with new friendships, a greater sense of confidence, and a broader view of what is possible.</p>
+<p>Your generosity helps make these experiences possible.</p>
+</div>
+</section>
 
-<p>Your generosity helps make these experiences possible. Because sometimes, giving a child the opportunity to experience something beyond what they know today can change what they believe is possible tomorrow.</p>`,
+<blockquote class="mt-12 border-l-4 border-brand-gold pl-6 font-heading text-2xl italic leading-snug text-brand-purple">Because sometimes, giving a child the opportunity to experience something beyond what they know today can change what they believe is possible tomorrow.</blockquote>`,
   },
   "one-million-meals-milestone": {
     title: "One Million Meals: Reflecting on 27 Years of Impact",
@@ -143,30 +164,25 @@ export default async function NewsArticlePage(props: NewsArticlePageProps) {
 
   return (
     <>
-      <div className="relative h-96 w-full overflow-hidden bg-gray-200 md:h-[500px]">
-        <img
-          src={article.image}
-          alt={article.title}
-          className="h-full w-full object-cover"
-        />
+      <div className="bg-gradient-to-br from-brand-purple to-brand-purple-dark px-4 pt-32 pb-12 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-3xl">
+          <div className="flex flex-wrap items-center gap-3 text-sm">
+            <span className="font-bold uppercase tracking-wider text-brand-gold-light">{article.category}</span>
+            <span className="text-white/50" aria-hidden="true">•</span>
+            <span className="text-white/80">{article.date}</span>
+          </div>
+          <h1 className="mt-3 font-heading text-3xl font-bold text-white sm:text-4xl lg:text-5xl">
+            {article.title}
+          </h1>
+        </div>
       </div>
 
       <Breadcrumbs items={breadcrumbItems} />
 
       <Section background="white" padding="lg">
         <article className="mx-auto max-w-3xl">
-          <div className="mb-8">
-            <div className="mb-4 flex items-center justify-between">
-              <span className="text-sm font-bold uppercase tracking-wider text-brand-gold">
-                {article.category}
-              </span>
-              <span className="text-sm text-brand-gray">{article.date}</span>
-            </div>
-            <h1 className="font-heading text-4xl font-bold text-brand-purple">{article.title}</h1>
-          </div>
-
           <div
-            className="prose prose-lg max-w-none text-brand-gray prose-headings:font-heading prose-headings:font-bold prose-headings:text-brand-purple prose-h3:text-2xl prose-strong:text-brand-charcoal prose-a:text-brand-gold hover:prose-a:text-brand-gold-light"
+            className="text-lg leading-relaxed text-brand-gray [&_a]:text-brand-gold [&_h3]:mt-10 [&_h3]:font-heading [&_h3]:text-2xl [&_h3]:font-bold [&_h3]:text-brand-purple [&_li]:mt-1 [&_p]:mt-4 [&_strong]:font-semibold [&_ul]:mt-4 [&_ul]:list-disc [&_ul]:pl-6"
             dangerouslySetInnerHTML={{ __html: article.content }}
           />
 
