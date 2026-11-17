@@ -101,3 +101,4 @@ without secrets, with graceful fallbacks everywhere a real API key would normall
 - All four forms (Get Help, Volunteer, Contact, Newsletter) work end-to-end without any API
   keys configured — they validate with Zod, POST to their route handler, and return a success
   response (logged server-side) so the UX is fully testable in development.
+
