@@ -37,29 +37,29 @@ const newsArticles: Record<
 <p>If you're interested in joining our volunteer community, we'd love to meet you. Visit our volunteer page to learn about current opportunities and the difference you can make.</p>`,
   },
   "kidz-academy-summer-2026": {
-    title: "Kidz Academy Summer Program: Where Learning Meets Growth",
+    title: "Park City Kidz Afterschool and Summer Camp Programs: Where Learning Meets Growth",
     category: "Program Updates",
     date: "June 15, 2026",
     image: "https://images.unsplash.com/photo-1427504494785-cdcd6c6dbdea?w=1200&q=80",
-    content: `<p>As summer officially begins, Park City Initiative's Kidz Academy is in full swing with over 220 children enrolled in our life-skills training, mentorship, and educational programs.</p>
+    content: `<p>As the year begins, our Park City Kidz Afterschool and Summer Camp programs welcome 200+ children into life-skills training and mentorship programs.</p>
 
-<h3>Summer focuses on three core areas</h3>
+<h3>Spring &amp; Fall: Taking Hope and Opportunity into the Neighborhood</h3>
 
-<p><strong>Academic Support:</strong> Our tutoring program helps children who fall behind during the school year catch up and get ahead, all while making learning fun through interactive activities.</p>
+<p>During the spring and fall seasons, Park City Kidz Mobile brings encouragement, opportunity, and life-skills development directly into some of Bridgeport's most underserved neighborhoods. Throughout May, June, and September, our mobile outreach team connects with children ages 5–12 through engaging, interactive lessons, games, drama, and creative activities designed to build confidence, strengthen character, encourage positive decision-making, and help children recognize their God-given potential.</p>
 
-<p><strong>Life Skills Training:</strong> From financial literacy to conflict resolution, we equip young people with practical skills they'll use for a lifetime.</p>
+<p>But our commitment doesn't end with the children's activities. Every two weeks, our trained and compassionate team members make home visits to connect with participating families, build meaningful relationships, identify needs, and provide essential resources and support. By reaching beyond the mobile site experience and into the home, we are able to encourage not only the child, but the entire family.</p>
 
-<p><strong>Mentorship & Connection:</strong> Our mentorship program pairs children with positive adult role models who provide guidance, support, and friendship.</p>
+<p>Your support helps us bring more than a program into these neighborhoods. It helps us bring caring relationships, practical resources, encouragement, and opportunities for children and families to thrive. Whether through giving, volunteering, or sharing your talents, you can help us make a difference; one child, one family, and one neighborhood at a time.</p>
 
-<h3>S.C.A.M.P. Summer Camp</h3>
+<h3>Summer: A Week of Adventure. A Lifetime of Memories.</h3>
 
-<p>Our signature free summer camp program, S.C.A.M.P. (Summer Community and Arts Mentorship Program), welcomes all children in our community. Camp activities include sports, arts, field trips, and character development — all free of charge.</p>
+<p>For many children, the opportunity to experience life beyond their everyday surroundings can open the door to a world of possibilities. Each summer, Park City Initiative Corp gives children the chance to step outside the familiar, leave the city behind, board a bus to Pennsylvania, and embark on an unforgettable week of overnight summer camp.</p>
 
-<h3>Looking ahead</h3>
+<p>For some, it may be their first time traveling away from home, exploring new surroundings, or discovering just how much they are capable of. Beyond the excitement and adventure, camp provides opportunities to build lasting friendships, develop confidence and independence, explore new interests, and create memories they will carry for years to come.</p>
 
-<p>As we move through summer, we're looking forward to hosting community events, college prep workshops, and career exploration days. Every experience is designed to expand possibilities and build confidence.</p>
+<p>In a safe, nurturing, and enriching environment, children are free to laugh, learn, explore, take on new challenges, and simply enjoy being children. They return home with more than stories of a great summer experience; they return with new friendships, a greater sense of confidence, and a broader view of what is possible.</p>
 
-<p>None of this would be possible without our dedicated staff and volunteers. If you're interested in supporting our youth programs, consider volunteering or making a donation today.</p>`,
+<p>Your generosity helps make these experiences possible. Because sometimes, giving a child the opportunity to experience something beyond what they know today can change what they believe is possible tomorrow.</p>`,
   },
   "one-million-meals-milestone": {
     title: "One Million Meals: Reflecting on 27 Years of Impact",
