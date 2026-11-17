@@ -76,21 +76,23 @@ export default function OurImpactPage() {
             <h3 className="font-semibold text-brand-purple">One Meal</h3>
             <p className="mt-2 text-sm text-brand-gray">
               Food Pantry, Senior Care Boxes, and Mobile Pantry combined to distribute over 1
-              million meals to 32,429 families in 2025.
+              million meals to 32,429 duplicated families in 2025.
             </p>
           </div>
           <div className="rounded-2xl bg-white p-6 shadow-md">
             <h3 className="font-semibold text-brand-purple">One Child</h3>
             <p className="mt-2 text-sm text-brand-gray">
-              Kidz Academy, Kidz Mobile, and S.C.A.M.P. served 220 children with life-skills
-              training and mentorship.
+              Park City Kidz and Inspire Sports Overnight Camp served 220 children with
+              life-skills training and mentorship.
             </p>
           </div>
           <div className="rounded-2xl bg-white p-6 shadow-md">
             <h3 className="font-semibold text-brand-purple">One Block</h3>
             <p className="mt-2 text-sm text-brand-gray">
-              Park City Youth ACTS engaged 241+ volunteers in Adopt-A-Block cleanups and career
-              readiness training.
+              Adopt-A-Block program was restructured to feature the cross-generational mentorship
+              and neighborhood transformation initiative that brings together adults ages 60 and
+              older with teens to work side by side on projects that improve the places they call
+              home.
             </p>
           </div>
         </div>
@@ -99,15 +101,23 @@ export default function OurImpactPage() {
       <Section background="white">
         <h2 className="font-heading text-2xl font-semibold text-brand-purple">Our Future</h2>
         <p className="mt-3 max-w-3xl text-brand-gray">
-          In 2026, PCI is expanding wraparound services at the One-Stop-Shop Community Market,
-          growing youth workforce development, and deepening partnerships with local healthcare
-          providers to reach even more Bridgeport families.
+          In 2027, Park City Initiative Corp (PCI) is building on its commitment to transform lives
+          and strengthen communities by expanding wraparound services through our One-Stop-Shop
+          Community Market, increasing opportunities for youth leadership development, and
+          strengthening strategic partnerships with local agencies and healthcare providers. Through
+          this integrated approach, we aim to connect more Bridgeport families with essential
+          resources, supportive services, and opportunities that address immediate needs while
+          creating pathways toward greater stability, self-sufficiency, and long-term well-being.
+        </p>
+        <p className="mt-4 max-w-3xl font-semibold text-brand-purple">
+          Our goal is not simply to serve more families, but to make a greater, more lasting
+          difference in the lives of those we reach.
         </p>
 
       </Section>
 
       <CTABanner
-        heading="Help Us Do More in 2026"
+        heading="Help Us Do More in 2027"
         primaryHref="/donate"
         primaryLabel="Donate"
       />
