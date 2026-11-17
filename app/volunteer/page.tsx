@@ -25,21 +25,21 @@ const breadcrumbItems = [
 
 const opportunities = [
   {
-    title: "Food Pantry Volunteer",
+    title: "Food Pantry/Community Market Volunteer",
     schedule: "Flexible",
-    description: "Help sort, pack, and distribute groceries at the Bishop Jean Williams Community Market.",
+    description: "Help sort, pack, clean, greet, unload the truck, and distribute groceries at the Bishop Jean Williams Community Market.",
     icon: Utensils,
   },
   {
     title: "Youth Leader / Mentor",
-    schedule: "After school + Saturdays",
-    description: "Mentor children in Kidz Academy and S.C.A.M.P. summer camp.",
+    schedule: "After school + Summers",
+    description: "Mentor children in Park City Kidz Afterschool Mobile Outreach.",
     icon: GraduationCap,
   },
   {
     title: "Adopt-A-Block Lead",
     schedule: "Monthly",
-    description: "Organize and lead a community cleanup on your block.",
+    description: "Learn more about the One Block cross-generational mentorship and neighborhood transformation initiative.",
     icon: ShieldCheck,
   },
 ];
