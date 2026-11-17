@@ -31,11 +31,11 @@ const newsArticles = [
   },
   {
     slug: "kidz-academy-summer-2026",
-    title: "Kidz Academy Summer Program: Where Learning Meets Growth",
+    title: "Park City Kidz Afterschool and Summer Camp Programs: Where Learning Meets Growth",
     category: "Program Updates",
     date: "June 15, 2026",
     excerpt:
-      "As summer begins, our Kidz Academy welcomes 220+ children into life-skills training and mentorship programs.",
+      "As the year begins, our Park City Kidz Afterschool and Summer Camp programs welcome 200+ children into life-skills training and mentorship programs.",
     image: "https://images.unsplash.com/photo-1427504494785-cdcd6c6dbdea?w=600&q=80",
   },
   {
