@@ -37,7 +37,7 @@ const opportunities = [
     icon: GraduationCap,
   },
   {
-    title: "Adopt-A-Block Lead",
+    title: "Adopt-A-Block Team Member",
     schedule: "Monthly",
     description: "Learn more about the One Block cross-generational mentorship and neighborhood transformation initiative.",
     icon: ShieldCheck,
