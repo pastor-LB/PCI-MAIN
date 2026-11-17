@@ -26,15 +26,20 @@ const milestones = [
   { year: "1999", title: "A Partnership is Born", description: "Bishop Jean Williams asks her daughter, Mary Green, for help feeding hungry families in Bridgeport.", icon: HeartHandshake },
   { year: "2003", title: "Metro Kidz Mobile Outreach Launches", description: "Mobile outreach begins serving 500+ children weekly across the city.", icon: Truck },
   { year: "2004", title: "Access to Recovery Provider", description: "PCI becomes an Access to Recovery provider, and United Way funding begins.", icon: HandCoins },
-  { year: "2007", title: "Adopt-A-Block Program Launches", description: "A $10,000 city grant launches the Adopt-A-Block neighborhood cleanup program.", icon: ShieldCheck },
+  { year: "2007", title: "Capacity-Building Grant", description: "PCI receives a $10,000 capacity-building grant from the City of Bridgeport.", icon: Coins },
+  { year: "2007", title: "Adopt-A-Block Program Launches", description: "The Adopt-A-Block neighborhood cleanup program launches.", icon: ShieldCheck },
   { year: "2014", title: "First Refrigerated Truck", description: "A $15,000 Walmart grant funds PCI's first refrigerated delivery truck.", icon: Truck },
   { year: "2018", title: "686,000 lbs of Food Distributed", description: "PCI distributes 686,000 lbs of food and 340,000+ meals in a single year.", icon: Award },
+  { year: "2018", title: "Living Legacy Award", description: "Pastor Mary, President/CEO, receives the Living Legacy Award from the City of Bridgeport.", icon: Award },
   { year: "2020", title: "COVID-19 Volunteer Recognition", description: "PCI's pandemic-response volunteers are recognized by Senator Blumenthal.", icon: ShieldCheck },
   { year: "2021", title: "Major Funding Awards", description: "Hartford Healthcare awards $50,000 and First County Bank awards $5,000.", icon: Coins },
+  { year: "2021", title: "Elizabeth M. Pfriem Foundation Support", description: "Major funding from the Elizabeth M. Pfriem Foundation begins.", icon: Coins },
   { year: "2022", title: "S.C.A.M.P. Summer Camp Launches", description: "The first year of S.C.A.M.P. summer camp runs free for all participating families.", icon: Sun },
+  { year: "2022", title: "One Stop Shop Grand Opening", description: "The One Stop Shop celebrates its grand opening at 3160 Park Ave.", icon: Store },
   { year: "2023", title: "One Million Meals & 20th Anniversary", description: "PCI hits the one-million-meal milestone, launches Park City Youth ACTS, opens Kidz Academy, celebrates 20 years, and moves to 3160 Park Ave.", icon: Trophy },
   { year: "2023", title: "Overnight Inspire Sports Camp", description: "We began sending bus loads of children and youth to the overnight Inspire Sports Camp.", icon: Sun },
-  { year: "2025", title: "One-Stop-Shop Community Market Opens", description: "A 7,500 sq ft Community Market opens with a Hartford Health Care clinic, financial literacy programs, and wraparound services.", icon: Store },
+  { year: "2023", title: "PT Barnum Leadership Award", description: "Pastor Mary, President/CEO, receives the PT Barnum Leadership Award.", icon: Trophy },
+  { year: "2024", title: "One Stop Shop Community Market Expands", description: "A 7,500 sq ft Community Market opens with a Hartford Health Care Neighborhood Clinic, financial literacy programs, career resources, access to recovery services, and other wraparound services.", icon: Store },
 ];
 
 export default function OurStoryPage() {
