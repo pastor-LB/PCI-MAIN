@@ -52,16 +52,16 @@ export default function AboutPage() {
           <Card borderColor="gold">
             <h2 className="font-heading text-2xl font-semibold text-brand-purple">Our Mission</h2>
             <p className="mt-3 text-brand-gray">
-              To meet basic needs today, restore hope for tomorrow, and transform lives forever
-              through food assistance, youth development, and community outreach in Bridgeport,
-              CT.
+              Our mission is to help transform Bridgeport and neighboring communities by decreasing
+              food insecurity, aiding families in crisis, and breaking generational cycles of poverty.
             </p>
           </Card>
           <Card borderColor="purple">
             <h2 className="font-heading text-2xl font-semibold text-brand-purple">Our Vision</h2>
             <p className="mt-3 text-brand-gray">
-              A Bridgeport where every family has access to nutritious food, every child has the
-              support to dream big, and every block has neighbors looking out for one another.
+              We envision a community where the heart of God is woven into the very fabric of our
+              city, breaking the cycle of need and fostering resilience and positive change for
+              generations to come.
             </p>
           </Card>
         </div>
