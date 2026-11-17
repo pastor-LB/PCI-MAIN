@@ -54,7 +54,7 @@ export default function WalkAThonPage() {
             Your Steps Made a Difference
           </h2>
           <p className="mt-4 text-brand-gray">
-            On March 21, 2026, community members from across Bridgeport gathered at Seaside Park to walk for a cause. Together, we raised funds that will help us continue feeding families, supporting youth, and building stronger neighborhoods throughout our city.
+            On March 21, 2026, community members from across Bridgeport gathered at Seaside Park to walk for a cause. Together, we raised <span className="font-bold text-brand-purple">$28,000</span> that will help us continue feeding families, supporting youth, and building stronger neighborhoods throughout our city.
           </p>
           <p className="mt-4 text-brand-gray">
             If you haven't already, you can still support our mission at any time.
