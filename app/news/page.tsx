@@ -44,7 +44,7 @@ const newsArticles = [
     category: "Impact Reports",
     date: "June 1, 2026",
     excerpt:
-      "Park City Initiative has distributed over 1 million meals to families and seniors across Bridgeport. Here's how we got here.",
+      "What began twenty-seven years ago with a simple request to help feed families in need has grown into a powerful mission of hope, compassion, and community impact.",
     image: "https://images.unsplash.com/photo-1593113646773-028c64a8f1b1?w=600&q=80",
   },
 ];
