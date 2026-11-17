@@ -87,30 +87,33 @@ const newsArticles: Record<
     category: "Impact Reports",
     date: "June 1, 2026",
     image: "https://images.unsplash.com/photo-1593113646773-028c64a8f1b1?w=1200&q=80",
-    content: `<p>Twenty-seven years ago, one woman — Mary Green — responded to a request from Bishop Jean Williams to help feed families in Bridgeport. What started as an act of compassion has grown into a movement that has now distributed over 1 million meals to our neighbors in need.</p>
+    content: `<p class="text-xl leading-relaxed text-brand-charcoal">What began twenty-seven years ago with a simple request to help feed families in need has grown into a powerful mission of hope, compassion, and community impact. Through the dedication of countless supporters, volunteers, and partners, more than one million meals have been distributed to Bridgeport neighbors facing food insecurity.</p>
+
+<p>One act of compassion became a lasting commitment, and today, that commitment continues to change lives, <strong class="text-brand-purple">one meal and one family at a time.</strong></p>
 
 <h3>The numbers behind the mission</h3>
 
-<ul>
-<li><strong>1,000,000+</strong> meals distributed annually</li>
-<li><strong>900+</strong> families served weekly</li>
-<li><strong>5,650</strong> senior care boxes delivered yearly</li>
-<li><strong>220+</strong> children in life-skills training programs</li>
-<li><strong>1,000+</strong> youth in S.C.A.M.P. summer programs</li>
-<li><strong>80+</strong> active volunteers per month</li>
-</ul>
+<div class="mt-6 grid grid-cols-2 gap-4 sm:grid-cols-3">
+<div class="rounded-2xl bg-brand-cream p-5 text-center shadow-sm"><p class="!mt-0 font-heading text-3xl font-bold text-brand-purple">1,000,000+</p><p class="!mt-1 text-sm text-brand-gray">meals distributed annually</p></div>
+<div class="rounded-2xl bg-brand-cream p-5 text-center shadow-sm"><p class="!mt-0 font-heading text-3xl font-bold text-brand-purple">5,650</p><p class="!mt-1 text-sm text-brand-gray">senior care boxes delivered yearly</p></div>
+<div class="rounded-2xl bg-brand-cream p-5 text-center shadow-sm"><p class="!mt-0 font-heading text-3xl font-bold text-brand-purple">220+</p><p class="!mt-1 text-sm text-brand-gray">children in life-skills training program</p></div>
+<div class="rounded-2xl bg-brand-cream p-5 text-center shadow-sm"><p class="!mt-0 font-heading text-3xl font-bold text-brand-purple">60+</p><p class="!mt-1 text-sm text-brand-gray">youth in overnight summer camp program</p></div>
+<div class="rounded-2xl bg-brand-cream p-5 text-center shadow-sm"><p class="!mt-0 font-heading text-3xl font-bold text-brand-purple">220+</p><p class="!mt-1 text-sm text-brand-gray">active volunteers per year</p></div>
+</div>
 
 <h3>But numbers tell only part of the story</h3>
 
-<p>Behind every meal is a person. Behind every care box is a senior knowing someone cares. Behind every child in our programs is a young person discovering their potential.</p>
+<p>Behind every meal is a person. Behind every care box is a senior knowing someone cares. Behind every child in our programs is a young person discovering their potential. We've watched families stabilize because they didn't have to choose between food and rent.</p>
 
-<p>We've watched families stabilize because they didn't have to choose between food and rent. We've celebrated college acceptances from young people who came through our mentorship programs. We've rebuilt entire blocks through community leadership.</p>
+<p>We've celebrated college acceptances from young people who came through our mentorship programs. We've impacted entire blocks through community leadership.</p>
 
 <h3>What comes next</h3>
 
-<p>As we celebrate this milestone, we're recommitting to our mission for the next chapter. We're expanding our mobile pantry to reach more neighborhoods. We're building out our youth employment program to create pathways to jobs. We're deepening our community partnerships to strengthen our collective impact.</p>
+<p>As we celebrate this milestone, we're recommitting to our mission for the next chapter. We're deepening our community partnerships to strengthen our collective impact.</p>
 
-<p>But we can't do this alone. Your support — through volunteering, donating, or simply sharing our mission — makes all the difference. Together, we're building Bridgeport: One Meal, One Child, One Block at a time.</p>`,
+<p>But we can't do this alone. Your support through volunteering, donating, or simply sharing our mission makes all the difference.</p>
+
+<blockquote class="mt-12 border-l-4 border-brand-gold pl-6 font-heading text-2xl italic leading-snug text-brand-purple">Together, we're building Bridgeport: One Meal, One Child, One Block at a time.</blockquote>`,
   },
 };
 
