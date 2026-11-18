@@ -19,8 +19,8 @@ const bgClasses: Record<NonNullable<SectionProps["background"]>, string> = {
 
 const paddingClasses: Record<NonNullable<SectionProps["padding"]>, string> = {
   sm: "py-8 sm:py-12",
-  md: "py-12 sm:py-16",
-  lg: "py-16 sm:py-24",
+  md: "py-10 sm:py-12",
+  lg: "py-12 sm:py-16",
 };
 
 export default function Section({
