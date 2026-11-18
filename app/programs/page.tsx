@@ -34,6 +34,7 @@ const programs = [
       "3 distribution channels (walk-in, senior deliveries, mobile pantry)",
     ],
     image: "/images/programs/one-meal.jpg",
+    imagePosition: "center 40%",
     href: "/one-meal",
   },
   {
@@ -46,6 +47,7 @@ const programs = [
       "60 Kids attend Inspire Sports Camp",
     ],
     image: "/images/programs/one-child.jpg",
+    imagePosition: "center 30%",
     href: "/one-child",
   },
   {
@@ -59,6 +61,7 @@ const programs = [
       "Volunteer-powered block transformation",
     ],
     image: "/images/programs/one-block.jpg",
+    imagePosition: "center 15%",
     href: "/one-block",
   },
 ];
@@ -105,13 +108,14 @@ export default function ProgramsPage() {
               index % 2 === 1 ? "lg:[&>*:first-child]:order-2" : ""
             }`}
           >
-            <div className="relative h-96 overflow-hidden rounded-2xl shadow-lg sm:h-[32rem]">
+            <div className="relative mx-auto h-96 w-full max-w-xl overflow-hidden rounded-2xl shadow-lg sm:h-[32rem]">
               <Image
                 src={program.image}
                 alt={`${program.title} program — ${program.subtitle}`}
                 fill
                 sizes="(min-width: 1024px) 50vw, 100vw"
-                className="object-cover object-center"
+                className="object-cover"
+                style={{ objectPosition: program.imagePosition }}
               />
             </div>
             <div>
