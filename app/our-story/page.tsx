@@ -63,7 +63,8 @@ export default function OurStoryPage() {
       <Breadcrumbs items={breadcrumbItems} />
 
       <Section background="white">
-        <div className="mx-auto max-w-3xl mb-12">
+        <div className="mx-auto mb-12 grid max-w-6xl items-center gap-12 lg:grid-cols-5">
+          <div className="lg:col-span-3">
           <h2 className="text-3xl font-bold text-brand-purple mb-6">
             One Request. 27 Years. One Million Meals.
           </h2>
@@ -88,6 +89,19 @@ export default function OurStoryPage() {
               and equip families with tools to improve their quality of life.</span>
             </p>
           </div>
+          </div>
+          <figure className="relative mx-auto w-full max-w-md lg:col-span-2">
+            <div aria-hidden="true" className="absolute -bottom-4 -right-4 h-full w-full rounded-2xl bg-brand-gold/80 lg:rotate-2" />
+            <div aria-hidden="true" className="absolute -left-4 -top-4 h-20 w-20 rounded-full border-4 border-brand-purple/25" />
+            <img
+              src="/images/our-story/food-pantry-team.jpg"
+              alt="Park City Initiative volunteers in orange shirts in front of the Bishop Jean Williams Food Pantry truck"
+              className="relative w-full rounded-2xl object-cover shadow-xl transition-transform duration-500 hover:rotate-0 lg:-rotate-2"
+            />
+            <figcaption className="relative mt-8 text-center font-heading text-xl italic text-brand-purple">
+              &ldquo;No One Should Go Hungry&rdquo;
+            </figcaption>
+          </figure>
         </div>
 
         <div className="border-t border-gray-200 pt-12">
