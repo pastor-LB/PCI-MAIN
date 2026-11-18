@@ -63,7 +63,7 @@ export default function OurStoryPage() {
       <Breadcrumbs items={breadcrumbItems} />
 
       <Section background="white">
-        <div className="mx-auto mb-12 grid max-w-6xl items-center gap-12 lg:grid-cols-5">
+        <div className="mb-10 grid items-center gap-12 lg:grid-cols-5">
           <div className="lg:col-span-3">
           <h2 className="text-3xl font-bold text-brand-purple mb-6">
             One Request. 27 Years. One Million Meals.
