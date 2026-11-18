@@ -59,14 +59,14 @@ export default function StoriesPage() {
       <Breadcrumbs items={breadcrumbItems} />
 
       <Section background="white">
-        <div className="mx-auto max-w-3xl mb-12 text-center">
+        <div className="mb-10 text-center">
           <p className="text-lg text-brand-gray">
             These are the stories of people whose lives have been transformed through Park City Initiative's
             work. Each one represents a family fed, a child empowered, and a neighborhood strengthened.
           </p>
         </div>
 
-        <div className="mx-auto grid max-w-6xl gap-10 md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-3">
           {stories.map((story) => (
             <Link
               key={story.slug}
