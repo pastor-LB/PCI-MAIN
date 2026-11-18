@@ -32,12 +32,12 @@ const partners = [
 export default function PartnerLogos() {
   return (
     <Section background="white" padding="lg">
-      <div className="mx-auto max-w-5xl">
+      <div>
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold text-brand-purple mb-3">
             Trusted Partners &amp; Funders
           </h2>
-          <p className="text-brand-gray max-w-2xl mx-auto">
+          <p className="text-brand-gray">
             Park City Initiative is grateful for the partnerships and support from leading organizations across Connecticut that make our work possible.
           </p>
         </div>
