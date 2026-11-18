@@ -3,34 +3,20 @@
 import { Suspense, useState } from "react";
 import { useSearchParams } from "next/navigation";
 
-const getTierDescription = (amount: number, frequency: "once" | "monthly") => {
-  const descriptions: Record<number, { once: string; monthly: string }> = {
-    25: {
-      once: "Feeds a child at S.C.A.M.P. for a week",
-      monthly: "Feeds a child at S.C.A.M.P. for an entire year",
-    },
-    75: {
-      once: "Provides a week of groceries for a family of 4",
-      monthly: "Provides 52 weeks of groceries for a family of 4",
-    },
-    150: {
-      once: "Sponsors a senior care box delivery for a month",
-      monthly: "Sponsors 12 senior care box deliveries per year",
-    },
-    500: {
-      once: "Funds a Mobile Pantry stop for a neighborhood",
-      monthly: "Funds 12 Mobile Pantry stops per year",
-    },
-  };
-  return descriptions[amount]?.[frequency] || "";
+const tiersByFrequency: Record<"once" | "monthly", { amount: number; description: string }[]> = {
+  once: [
+    { amount: 50, description: "Sponsors 2 children at Park City Kidz Mobile for an entire year." },
+    { amount: 75, description: "Provides 750 meals for families in need." },
+    { amount: 250, description: "Sponsors a senior care box delivery for a month." },
+    { amount: 500, description: "Sponsors 5,000 meals for families in need." },
+  ],
+  monthly: [
+    { amount: 25, description: "Sponsors a child at Park City Kidz Mobile for an entire year." },
+    { amount: 50, description: "Helps provide 500 meals per month for families." },
+    { amount: 150, description: "Sponsors 10 senior care box deliveries per month." },
+    { amount: 250, description: "Helps provide 2,500 meals per month for families." },
+  ],
 };
-
-const tiers = [
-  { amount: 25 },
-  { amount: 75 },
-  { amount: 150 },
-  { amount: 500 },
-];
 
 function DonatePanelInner() {
   const searchParams = useSearchParams();
@@ -49,7 +35,10 @@ function DonatePanelInner() {
       <div className="flex flex-col items-center gap-3">
         <div className="inline-flex rounded-full bg-brand-gray-light p-1">
           <button
-            onClick={() => setFrequency("monthly")}
+            onClick={() => {
+              setFrequency("monthly");
+              if (selected !== "custom") setSelected(null);
+            }}
             className={`rounded-full px-8 py-3 text-sm font-bold uppercase tracking-wide transition-all ${
               frequency === "monthly"
                 ? "bg-brand-purple text-white shadow-lg"
@@ -59,7 +48,10 @@ function DonatePanelInner() {
             Give Monthly ⭐
           </button>
           <button
-            onClick={() => setFrequency("once")}
+            onClick={() => {
+              setFrequency("once");
+              if (selected !== "custom") setSelected(null);
+            }}
             className={`rounded-full px-8 py-3 text-sm font-bold uppercase tracking-wide transition-all ${
               frequency === "once"
                 ? "bg-brand-purple text-white shadow-lg"
@@ -72,7 +64,7 @@ function DonatePanelInner() {
       </div>
 
       <div className="mt-10 grid gap-6 sm:grid-cols-4">
-        {tiers.map((tier) => (
+        {tiersByFrequency[frequency].map((tier) => (
           <button
             key={tier.amount}
             onClick={() => setSelected(tier.amount)}
@@ -86,7 +78,7 @@ function DonatePanelInner() {
             <p className="text-xs text-brand-gold font-semibold mb-1">
               {frequency === "monthly" ? "PER MONTH" : "ONE-TIME"}
             </p>
-            <p className="mt-2 text-sm text-brand-gray">{getTierDescription(tier.amount, frequency)}</p>
+            <p className="mt-2 text-sm text-brand-gray">{tier.description}</p>
           </button>
         ))}
       </div>
