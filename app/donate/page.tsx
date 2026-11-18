@@ -21,7 +21,7 @@ const breadcrumbItems = [
   { name: "Donate", href: "/donate" },
 ];
 
-const zeffyFormId = process.env.NEXT_PUBLIC_ZEFFY_FORM_ID ?? "ZEFFY-FORM-ID-PLACEHOLDER";
+const zeffyFormId = process.env.NEXT_PUBLIC_ZEFFY_FORM_ID ?? "donate-to-impact-lives-39";
 
 export default function DonatePage() {
   return (
@@ -59,16 +59,15 @@ export default function DonatePage() {
           Give Securely Online
         </h2>
         <p className="mx-auto mt-2 max-w-2xl text-center text-sm text-brand-gray">
-          Donations are processed securely through Zeffy, a 0%-platform-fee donation
-          processor built for nonprofits. Replace the placeholder Zeffy form ID in the
-          environment variables once your account is set up.
+          Donations are processed securely through Zeffy, a donation platform built for
+          nonprofits, so 100% of your gift goes to Park City Initiative.
         </p>
         <div className="mx-auto mt-8 max-w-2xl overflow-hidden rounded-2xl shadow-lg">
           <iframe
             title="Donate to Park City Initiative"
-            src={`https://www.zeffy.com/en-US/donation-form/${zeffyFormId}`}
+            src={`https://www.zeffy.com/embed/donation-form/${zeffyFormId}`}
             width="100%"
-            height="600"
+            height="750"
             loading="lazy"
             style={{ border: 0 }}
           />
