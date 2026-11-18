@@ -38,7 +38,7 @@ export default function TransparencyPage() {
       <Breadcrumbs items={breadcrumbItems} />
 
       <Section background="white">
-        <p className="mx-auto max-w-3xl text-center text-brand-gray">
+        <p className="text-center text-brand-gray">
           We believe accountability to our community is part of our mission. Below you&apos;ll find
           our organizational basics, annual report, and financial information.
         </p>
