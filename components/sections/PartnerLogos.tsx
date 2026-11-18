@@ -1,7 +1,9 @@
 import Section from "@/components/ui/Section";
 import { ExternalLink } from "lucide-react";
 
-const partners = [
+type Partner = { name: string; url?: string; description: string };
+
+const partners: Partner[] = [
   {
     name: "CT Foodshare",
     url: "https://www.ctfoodshare.org",
@@ -27,6 +29,37 @@ const partners = [
     url: "https://www.firstcountybank.com",
     description: "Community banking partner",
   },
+  {
+    name: "Elizabeth M. Pfriem Foundation",
+    description: "Foundation supporting our work",
+  },
+  {
+    name: "Near & Far Aid",
+    description: "Fairfield County grant partner",
+  },
+  {
+    name: "Town Fair Tire",
+    url: "https://www.townfairtire.com",
+    description: "Community business partner",
+  },
+  {
+    name: "M&T Bank",
+    url: "https://www.mtb.com",
+    description: "Community banking partner",
+  },
+  {
+    name: "Recovery Network of Programs",
+    description: "Recovery & behavioral health services",
+  },
+  {
+    name: "Hartford HealthCare Neighborhood Clinics",
+    url: "https://hartfordhealthcare.org/health-wellness/neighborhood-health/neighborhood-health",
+    description: "Neighborhood health care for our community",
+  },
+  {
+    name: "Goodwill Career Center",
+    description: "Career & job readiness resources",
+  },
 ];
 
 export default function PartnerLogos() {
@@ -43,14 +76,8 @@ export default function PartnerLogos() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {partners.map((partner) => (
-            <a
-              key={partner.name}
-              href={partner.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group h-full"
-            >
+          {partners.map((partner) => {
+            const card = (
               <div
                 className="h-full flex flex-col items-center justify-center p-6 rounded-2xl
                            bg-gradient-to-br from-brand-purple/5 to-brand-gold/5
@@ -66,16 +93,33 @@ export default function PartnerLogos() {
                   <p className="text-sm text-brand-gray group-hover:text-brand-charcoal transition-colors">
                     {partner.description}
                   </p>
-                  <div className="pt-2 flex items-center gap-2 text-brand-gold group-hover:text-brand-purple transition-colors">
-                    <span className="text-xs font-semibold uppercase tracking-wide">
-                      Visit Website
-                    </span>
-                    <ExternalLink size={14} className="group-hover:translate-x-1 transition-transform" />
-                  </div>
+                  {partner.url && (
+                    <div className="pt-2 flex items-center gap-2 text-brand-gold group-hover:text-brand-purple transition-colors">
+                      <span className="text-xs font-semibold uppercase tracking-wide">
+                        Visit Website
+                      </span>
+                      <ExternalLink size={14} className="group-hover:translate-x-1 transition-transform" />
+                    </div>
+                  )}
                 </div>
               </div>
-            </a>
-          ))}
+            );
+            return partner.url ? (
+              <a
+                key={partner.name}
+                href={partner.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group h-full"
+              >
+                {card}
+              </a>
+            ) : (
+              <div key={partner.name} className="group h-full">
+                {card}
+              </div>
+            );
+          })}
         </div>
 
         <div className="mt-12 p-6 bg-brand-purple/5 rounded-2xl border border-brand-purple/10">
