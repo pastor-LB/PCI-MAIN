@@ -88,21 +88,23 @@ export default function AboutPage() {
         <h2 className="text-center font-heading text-3xl font-semibold text-brand-purple">
           27 Years Strong
         </h2>
-        <div className="mt-10 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-6">
+        <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {[
-            { src: 'https://images.unsplash.com/photo-1593113646773-028c64a8f1b1?w=400&q=80', alt: 'Volunteers distributing food at community pantry' },
-            { src: 'https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=400&q=80', alt: 'Community members working together' },
-            { src: 'https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?w=400&q=80', alt: 'Volunteers packing food boxes for delivery' },
-            { src: 'https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?w=400&q=80', alt: 'Community outreach event' },
-            { src: 'https://images.unsplash.com/photo-1559027615-cd4628902d4a?w=400&q=80', alt: 'Food pantry serving families' },
-            { src: 'https://images.unsplash.com/photo-1531206715517-5c0ba140b2b8?w=400&q=80', alt: 'Park City Initiative staff and volunteers' },
+            { src: "/images/about/history-1.jpg", alt: "A Park City Initiative founder standing at the doorway of a home", pos: "center 25%" },
+            { src: "/images/about/history-2.jpg", alt: "Volunteer with a clipboard leading an outdoor food distribution", pos: "center 30%" },
+            { src: "/images/about/history-3.jpg", alt: "Volunteers in safety vests distributing fresh produce and canned goods", pos: "center 35%" },
+            { src: "/images/about/history-4.jpg", alt: "Park City Initiative celebrating 20 years of serving our community", pos: "center" },
+            { src: "/images/about/history-5.jpg", alt: "Park City Initiative team cutting a red ribbon at a grand opening", pos: "center 40%" },
+            { src: "/images/about/history-6.jpg", alt: "Volunteer beside stacks of Box of Love Thanksgiving boxes", pos: "center 40%" },
           ].map((img, index) => (
-            <div key={index} className="relative aspect-square overflow-hidden rounded-xl">
+            <div key={index} className="relative aspect-[4/3] overflow-hidden rounded-xl shadow-md">
               <Image
                 src={img.src}
                 alt={img.alt}
                 fill
-                className="object-cover"
+                sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
+                className="object-cover transition-transform duration-500 hover:scale-105"
+                style={{ objectPosition: img.pos }}
               />
             </div>
           ))}
