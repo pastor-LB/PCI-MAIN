@@ -21,7 +21,7 @@ const newsArticles: Record<
     title: "Volunteer Spotlight: Building Community One Shift at a Time",
     category: "Volunteer Spotlights",
     date: "June 23, 2026",
-    image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200&q=80",
+    image: "/images/news/volunteer-spotlight.jpg",
     content: `<p>Meet one of our dedicated volunteers who has been serving at Park City Initiative's food pantry for the past two years. Their commitment to our mission demonstrates the heart of our community.</p>
 
 <p>Every week, volunteers like this make a direct impact on the lives of families and seniors across Bridgeport. From sorting and packing nutritious food to connecting people with resources, volunteers are the backbone of everything we do.</p>
@@ -40,7 +40,7 @@ const newsArticles: Record<
     title: "Park City Kidz Afterschool and Summer Camp Programs: Where Learning Meets Growth",
     category: "Program Updates",
     date: "June 15, 2026",
-    image: "https://images.unsplash.com/photo-1427504494785-cdcd6c6dbdea?w=1200&q=80",
+    image: "/images/news/park-city-kidz-update.jpg",
     content: `<p class="text-xl leading-relaxed text-brand-charcoal">As the year begins, our Park City Kidz Afterschool and Summer Camp programs welcome <strong class="text-brand-purple">200+ children</strong> into life-skills training and mentorship programs.</p>
 
 <section class="mt-12 overflow-hidden rounded-2xl border border-brand-gold/30 bg-brand-cream shadow-sm">
@@ -86,7 +86,7 @@ const newsArticles: Record<
     title: "One Million Meals: Reflecting on 27 Years of Impact",
     category: "Impact Reports",
     date: "June 1, 2026",
-    image: "https://images.unsplash.com/photo-1593113646773-028c64a8f1b1?w=1200&q=80",
+    image: "/images/news/one-million-meals.jpg",
     content: `<p class="text-xl leading-relaxed text-brand-charcoal">What began twenty-seven years ago with a simple request to help feed families in need has grown into a powerful mission of hope, compassion, and community impact. Through the dedication of countless supporters, volunteers, and partners, more than one million meals have been distributed to Bridgeport neighbors facing food insecurity.</p>
 
 <p>One act of compassion became a lasting commitment, and today, that commitment continues to change lives, <strong class="text-brand-purple">one meal and one family at a time.</strong></p>
@@ -184,6 +184,12 @@ export default async function NewsArticlePage(props: NewsArticlePageProps) {
 
       <Section background="white" padding="lg">
         <article className="mx-auto max-w-3xl">
+          <img
+            src={article.image}
+            alt={article.title}
+            className="mb-10 max-h-[32rem] w-full rounded-2xl object-cover object-[center_30%] shadow-lg"
+          />
+
           <div
             className="text-lg leading-relaxed text-brand-gray [&_a]:text-brand-gold [&_h3]:mt-10 [&_h3]:font-heading [&_h3]:text-2xl [&_h3]:font-bold [&_h3]:text-brand-purple [&_li]:mt-1 [&_p]:mt-4 [&_strong]:font-semibold [&_ul]:mt-4 [&_ul]:list-disc [&_ul]:pl-6"
             dangerouslySetInnerHTML={{ __html: article.content }}
