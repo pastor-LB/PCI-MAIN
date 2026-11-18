@@ -60,21 +60,22 @@ export default function GetHelpPage() {
             <Utensils className="h-9 w-9 text-brand-purple" aria-hidden="true" />
             <h3 className="mt-3 text-lg font-semibold text-brand-charcoal">Food Assistance</h3>
             <p className="mt-2 text-sm text-brand-gray">
-              Pantry access, senior care boxes, and mobile pantry deliveries.
+              Pantry access, senior care boxes, and mobile pantry deliveries are available to anyone while
+              supplies last.
             </p>
           </Card>
           <Card borderColor="purple">
             <ShieldAlert className="h-9 w-9 text-brand-purple" aria-hidden="true" />
             <h3 className="mt-3 text-lg font-semibold text-brand-charcoal">Crisis Resources</h3>
             <p className="mt-2 text-sm text-brand-gray">
-              Connections to housing, recovery, and emergency support services.
+              Please let us know how we can help! We will attempt to direct you to available resources.
             </p>
           </Card>
           <Card borderColor="charcoal">
             <GraduationCap className="h-9 w-9 text-brand-purple" aria-hidden="true" />
             <h3 className="mt-3 text-lg font-semibold text-brand-charcoal">Youth Programs</h3>
             <p className="mt-2 text-sm text-brand-gray">
-              Enroll a child in Kidz Academy, Kidz Mobile, or S.C.A.M.P.
+              Enroll a child in Park City Kidz Mobile or Overnight Summer Camp.
             </p>
           </Card>
         </div>
