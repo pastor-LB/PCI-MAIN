@@ -88,7 +88,7 @@ export default function AboutPage() {
       <Breadcrumbs items={breadcrumbItems} />
 
       <Section background="white">
-        <p className="mx-auto max-w-3xl text-center text-brand-gray mb-12">
+        <p className="text-center text-lg text-brand-gray mb-10">
           For 27 years, Park City Initiative has been a steady presence in Bridgeport — meeting immediate needs while building a vision of thriving families and resilient neighborhoods. From our roots as a single food pantry to today's integrated programs serving youth, seniors, and entire blocks, we remain committed to the founding principle: that one person's request for help can spark a movement.
         </p>
 
@@ -120,7 +120,7 @@ export default function AboutPage() {
           <LeaderCard person={founder} size="lg" />
         </div>
 
-        <div className="mt-16">
+        <div className="mt-12">
           <h3 className="flex items-center justify-center gap-4 text-sm font-bold uppercase tracking-[0.2em] text-brand-gold-dark">
             <span className="h-px w-12 bg-brand-gold/50" aria-hidden="true" />
             Board of Directors
@@ -135,7 +135,7 @@ export default function AboutPage() {
           </div>
         </div>
 
-        <div className="mt-16">
+        <div className="mt-12">
           <h3 className="flex items-center justify-center gap-4 text-sm font-bold uppercase tracking-[0.2em] text-brand-gold-dark">
             <span className="h-px w-12 bg-brand-gold/50" aria-hidden="true" />
             Staff
