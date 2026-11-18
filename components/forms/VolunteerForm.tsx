@@ -9,6 +9,7 @@ const interests = [
   "Food Pantry",
   "Youth Programs",
   "Adopt-A-Block",
+  "Farm Care Team",
   "Admin",
   "Special Events",
   "Professional Skills",
