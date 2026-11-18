@@ -20,7 +20,7 @@ export const SITE = {
     facebook: "https://www.facebook.com/PCIBpt",
     instagram: "https://www.instagram.com/pcibpt/",
   },
-  ein: "[ INSERT EIN ]",
+  ein: "90-0074489",
   founded: 1999,
   stats: {
     meals: "1,000,000+",
