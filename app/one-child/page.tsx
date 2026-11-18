@@ -39,7 +39,7 @@ export default function OneChildPage() {
       <Breadcrumbs items={breadcrumbItems} />
 
       <Section background="white">
-        <div className="mx-auto max-w-3xl">
+        <div>
           <div className="flex items-center gap-3">
             <span className="flex h-12 w-12 items-center justify-center rounded-full bg-brand-gold/15">
               <Truck className="h-6 w-6 text-brand-purple" aria-hidden="true" />
@@ -78,7 +78,7 @@ export default function OneChildPage() {
       </Section>
 
       <Section background="cream">
-        <div className="mx-auto max-w-3xl">
+        <div>
           <div className="flex items-center gap-3">
             <span className="flex h-12 w-12 items-center justify-center rounded-full bg-brand-purple/10">
               <Sun className="h-6 w-6 text-brand-purple" aria-hidden="true" />
