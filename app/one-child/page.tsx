@@ -110,21 +110,23 @@ export default function OneChildPage() {
         <h2 className="text-center font-heading text-3xl font-semibold text-brand-purple">
           Photo Gallery
         </h2>
-        <div className="mt-10 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-6">
+        <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {[
-            { src: 'https://images.unsplash.com/photo-1529390079861-591de354faf5?w=400&q=80', alt: 'Children learning in youth program' },
-            { src: 'https://images.unsplash.com/photo-1509062522246-3755977927d7?w=400&q=80', alt: 'Mentor working with youth' },
-            { src: 'https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=400&q=80', alt: 'Children participating in summer camp activities' },
-            { src: 'https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=400&q=80', alt: 'Youth leadership training session' },
-            { src: 'https://images.unsplash.com/photo-1497366216548-37526070297c?w=400&q=80', alt: 'S.C.A.M.P. summer program activities' },
-            { src: 'https://images.unsplash.com/photo-1604881991720-f91add269bed?w=400&q=80', alt: 'Kidz Academy after-school program' },
+            { src: "/images/one-child/kidz-1.jpg", alt: "Park City Kidz Mobile gathering children for an outdoor lesson in the neighborhood", pos: "center" },
+            { src: "/images/one-child/kidz-2.jpg", alt: "Youth laughing as they stretch homemade slime during a hands-on activity", pos: "center 30%" },
+            { src: "/images/one-child/kidz-3.jpg", alt: "Volunteers handing out gift bags to a Park City Kidz participant", pos: "center" },
+            { src: "/images/one-child/kidz-4.jpg", alt: "Children gathered in front of the colorful Dream bus at a park", pos: "center 45%" },
+            { src: "/images/one-child/kidz-5.jpg", alt: "Two girls using straws to move candy in a game during summer camp", pos: "center" },
+            { src: "/images/one-child/kidz-6.jpg", alt: "Three smiling boys in Park City Kidz shirts at a community event", pos: "center 35%" },
           ].map((img, index) => (
-            <div key={index} className="relative aspect-square overflow-hidden rounded-xl">
+            <div key={index} className="relative aspect-[4/3] overflow-hidden rounded-xl shadow-md">
               <Image
                 src={img.src}
                 alt={img.alt}
                 fill
-                className="object-cover"
+                sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
+                className="object-cover transition-transform duration-500 hover:scale-105"
+                style={{ objectPosition: img.pos }}
               />
             </div>
           ))}
