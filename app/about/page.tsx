@@ -90,7 +90,7 @@ export default function AboutPage() {
         </h2>
         <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {[
-            { src: "/images/about/history-1.jpg", alt: "A Park City Initiative founder standing at the doorway of a home", pos: "center 25%" },
+            { src: "/images/about/history-1-restored.jpg", alt: "A Park City Initiative founder standing at the doorway of a home", pos: "center 20%" },
             { src: "/images/about/history-2.jpg", alt: "Volunteer with a clipboard leading an outdoor food distribution", pos: "center 30%" },
             { src: "/images/about/history-3.jpg", alt: "Volunteers in safety vests distributing fresh produce and canned goods", pos: "center 35%" },
             { src: "/images/about/history-4.jpg", alt: "Park City Initiative celebrating 20 years of serving our community", pos: "center" },
