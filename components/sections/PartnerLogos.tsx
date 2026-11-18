@@ -60,6 +60,10 @@ const partners: Partner[] = [
     name: "Goodwill Career Center",
     description: "Career & job readiness resources",
   },
+  {
+    name: "City Wide Church",
+    description: "Faith partner in Bridgeport",
+  },
 ];
 
 export default function PartnerLogos() {
