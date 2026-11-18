@@ -84,9 +84,6 @@ export default function GetHelpPage() {
         <div className="mx-auto max-w-3xl rounded-2xl bg-brand-purple p-8 text-center text-white shadow-lg">
           <Phone className="mx-auto h-8 w-8 text-brand-gold" aria-hidden="true" />
           <p className="mt-3 font-heading text-3xl font-bold">{SITE.phoneDisplay}</p>
-          <p className="mt-2 text-white/80">
-            Walk-ins welcome Wednesdays at the Community Market, {SITE.address.full}.
-          </p>
         </div>
       </Section>
 
