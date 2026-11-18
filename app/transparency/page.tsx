@@ -70,8 +70,8 @@ export default function TransparencyPage() {
           </h2>
           <p className="mt-2 text-sm text-brand-gray">
             Our full 2025 annual report is available upon request. Contact us at{" "}
-            <a href="mailto:help@parkcityinitiative.org" className="font-semibold text-brand-purple hover:underline">
-              help@parkcityinitiative.org
+            <a href="mailto:info@parkcityinitiative.org" className="font-semibold text-brand-purple hover:underline">
+              info@parkcityinitiative.org
             </a>{" "}
             for detailed financial information and program reports.
           </p>
