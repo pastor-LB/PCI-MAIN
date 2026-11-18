@@ -67,7 +67,7 @@ export default function NewsPage() {
       <Breadcrumbs items={breadcrumbItems} />
 
       <Section background="white">
-        <div className="mx-auto max-w-3xl mb-12">
+        <div className="mb-10">
           <p className="text-lg text-brand-gray">
             Stay connected with the latest updates from Park City Initiative. Discover volunteer spotlights,
             community impact stories, program updates, and more.
