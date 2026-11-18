@@ -111,7 +111,7 @@ export default function AboutPage() {
         </div>
       </Section>
 
-      <Section background="cream">
+      <Section background="cream" id="leadership" className="scroll-mt-24">
         <h2 className="text-center font-heading text-3xl font-semibold text-brand-purple">
           Meet the Leadership
         </h2>
