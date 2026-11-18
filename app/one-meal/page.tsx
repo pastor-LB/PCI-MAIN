@@ -147,8 +147,11 @@ export default function OneMealPage() {
               ))}
             </ul>
             <p className="mt-4 rounded-lg bg-white/10 p-3 text-sm text-white/90">
-              All shoppers have scheduled appointments. New shoppers are welcome to sign up on{" "}
-              <span className="font-semibold text-brand-gold-light">Mondays between 10:00 am – 2:00 pm</span>, 857 Howard Ave., Bridgeport.
+              All shoppers have scheduled appointments. New shoppers are welcome to sign up on
+              <br />
+              <span className="font-semibold text-brand-gold-light">Mondays between 10:00 am – 2:00 pm</span>,
+              <br />
+              857 Howard Ave., Bridgeport.
             </p>
           </div>
         </div>
