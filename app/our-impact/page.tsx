@@ -100,7 +100,7 @@ export default function OurImpactPage() {
 
       <Section background="white">
         <h2 className="font-heading text-2xl font-semibold text-brand-purple">Our Future</h2>
-        <p className="mt-3 max-w-3xl text-brand-gray">
+        <p className="mt-3 text-brand-gray">
           In 2027, Park City Initiative Corp (PCI) is building on its commitment to transform lives
           and strengthen communities by expanding wraparound services through our One-Stop-Shop
           Community Market, increasing opportunities for youth leadership development, and
@@ -109,7 +109,7 @@ export default function OurImpactPage() {
           resources, supportive services, and opportunities that address immediate needs while
           creating pathways toward greater stability, self-sufficiency, and long-term well-being.
         </p>
-        <p className="mt-4 max-w-3xl font-semibold text-brand-purple">
+        <p className="mt-4 font-semibold text-brand-purple">
           Our goal is not simply to serve more families, but to make a greater, more lasting
           difference in the lives of those we reach.
         </p>
