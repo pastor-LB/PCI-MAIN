@@ -4,20 +4,20 @@ import { useState } from "react";
 import Section from "@/components/ui/Section";
 import Button from "@/components/ui/Button";
 
-const tiers = [
-  {
-    amount: 25,
-    description: "Feeds a child at summer camp for a week",
-  },
-  {
-    amount: 75,
-    description: "Provides a week of groceries for a family of 4",
-  },
-  {
-    amount: 150,
-    description: "Sponsors a senior care box delivery for a month",
-  },
-];
+const tiersByFrequency: Record<"once" | "monthly", { amount: number; description: string }[]> = {
+  once: [
+    { amount: 50, description: "Sponsors 2 children at Park City Kidz Mobile for an entire year." },
+    { amount: 75, description: "Provides 750 meals for families in need." },
+    { amount: 250, description: "Sponsors a senior care box delivery for a month." },
+    { amount: 500, description: "Sponsors 5,000 meals for families in need." },
+  ],
+  monthly: [
+    { amount: 25, description: "Sponsors a child at Park City Kidz Mobile for an entire year." },
+    { amount: 50, description: "Helps provide 500 meals per month for families." },
+    { amount: 150, description: "Sponsors 10 senior care box deliveries per month." },
+    { amount: 250, description: "Helps provide 2,500 meals per month for families." },
+  ],
+};
 
 export default function DonateWidget() {
   const [frequency, setFrequency] = useState<"once" | "monthly">("monthly");
@@ -47,10 +47,11 @@ export default function DonateWidget() {
           </button>
         </div>
       </div>
-      <div className="mt-10 grid gap-6 sm:grid-cols-3">
-        {tiers.map((tier) => (
+      <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        {tiersByFrequency[frequency].map((tier) => (
           <div key={tier.amount} className="rounded-2xl bg-white p-6 text-center shadow-lg">
             <p className="font-heading text-3xl font-bold text-brand-purple">${tier.amount}</p>
+            <p className="text-xs font-semibold text-brand-gold">{frequency === "monthly" ? "PER MONTH" : "ONE-TIME"}</p>
             <p className="mt-2 text-sm text-brand-gray">{tier.description}</p>
             <div className="mt-4">
               <Button href={`/donate?amount=${tier.amount}&frequency=${frequency}`} variant="gold">
