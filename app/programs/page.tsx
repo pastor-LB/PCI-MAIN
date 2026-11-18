@@ -46,8 +46,9 @@ const programs = [
       "220+ children in life-skills training programs",
       "60 Kids attend Inspire Sports Camp",
     ],
-    image: "/images/programs/one-child.jpg",
-    imagePosition: "center 30%",
+    image: "/images/programs/one-child-stamford.jpg",
+    imagePosition: "center center",
+    wide: true,
     href: "/one-child",
   },
   {
@@ -108,7 +109,11 @@ export default function ProgramsPage() {
               index % 2 === 1 ? "lg:[&>*:first-child]:order-2" : ""
             }`}
           >
-            <div className="relative mx-auto h-96 w-full max-w-xl overflow-hidden rounded-2xl shadow-lg sm:h-[32rem]">
+            <div
+              className={`relative mx-auto w-full max-w-xl overflow-hidden rounded-2xl shadow-lg ${
+                "wide" in program && program.wide ? "aspect-[3/2]" : "h-96 sm:h-[32rem]"
+              }`}
+            >
               <Image
                 src={program.image}
                 alt={`${program.title} program — ${program.subtitle}`}
