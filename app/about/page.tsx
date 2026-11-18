@@ -22,11 +22,55 @@ const breadcrumbItems = [
   { name: "About", href: "/about" },
 ];
 
-const staffPlaceholders = [
-  { name: "Bishop Jean Williams", role: "Founder" },
-  { name: "Mary Green", role: "Chief Executive Officer" },
-  // TODO: Add Program Director and Operations Manager when staff photos are available
+type Leader = { name: string; role: string; photo?: string };
+
+// To add a photo: upload it to public/images/leadership/ and set `photo: "/images/leadership/filename.jpg"`.
+const founder: Leader = { name: "Bishop Jean Williams", role: "Founder" };
+
+const board: Leader[] = [
+  { name: "Mary C. Green", role: "President/CEO" },
+  { name: "Leonard R. Green", role: "Vice President" },
+  { name: "Michele DePina", role: "Board Chair" },
+  { name: "Peter Mitchell", role: "Board Secretary" },
+  { name: "Pastor Luis Burgos", role: "Board Treasurer" },
+  { name: "Esther Dixon", role: "Founding Board Member" },
+  { name: "Matt Alcebo", role: "Director" },
 ];
+
+const staff: Leader[] = [
+  { name: "Sharon Nixon", role: "Pantry Director" },
+  { name: "Anyoli Rivera", role: "Park City Kidz Coordinator/Resource Specialist" },
+  { name: "Leonard R. Green", role: "Procurement" },
+];
+
+function initials(name: string) {
+  return name
+    .replace(/^(Bishop|Pastor)\s+/, "")
+    .split(" ")
+    .filter((w) => /^[A-Z]/.test(w) && !w.endsWith("."))
+    .map((w) => w[0])
+    .slice(0, 2)
+    .join("");
+}
+
+function LeaderCard({ person, size = "md" }: { person: Leader; size?: "md" | "lg" }) {
+  const circle = size === "lg" ? "h-40 w-40 text-4xl" : "h-28 w-28 text-2xl";
+  return (
+    <div className="text-center">
+      <div
+        className={`mx-auto flex ${circle} items-center justify-center overflow-hidden rounded-full border-4 border-white bg-brand-purple/10 font-heading font-semibold text-brand-purple shadow-md ring-2 ring-brand-gold/40`}
+      >
+        {person.photo ? (
+          <img src={person.photo} alt={person.name} className="h-full w-full object-cover" />
+        ) : (
+          <span aria-hidden="true">{initials(person.name)}</span>
+        )}
+      </div>
+      <h4 className="mt-4 font-semibold text-brand-charcoal">{person.name}</h4>
+      <p className="mt-1 text-sm text-brand-gray">{person.role}</p>
+    </div>
+  );
+}
 
 export default function AboutPage() {
   return (
@@ -71,16 +115,39 @@ export default function AboutPage() {
         <h2 className="text-center font-heading text-3xl font-semibold text-brand-purple">
           Meet the Leadership
         </h2>
-        <div className="mt-10 grid gap-8 sm:grid-cols-3">
-          {staffPlaceholders.map((person) => (
-            <div key={person.name + person.role} className="text-center">
-              <div className="mx-auto h-32 w-32 overflow-hidden rounded-full bg-brand-gray-light">
-                {/* TODO: Replace with actual PCI photography */}
+
+        <div className="mt-10">
+          <LeaderCard person={founder} size="lg" />
+        </div>
+
+        <div className="mt-16">
+          <h3 className="flex items-center justify-center gap-4 text-sm font-bold uppercase tracking-[0.2em] text-brand-gold-dark">
+            <span className="h-px w-12 bg-brand-gold/50" aria-hidden="true" />
+            Board of Directors
+            <span className="h-px w-12 bg-brand-gold/50" aria-hidden="true" />
+          </h3>
+          <div className="mx-auto mt-8 flex max-w-[52rem] flex-wrap justify-center gap-x-8 gap-y-10">
+            {board.map((person) => (
+              <div key={person.name + person.role} className="w-40 sm:w-44">
+                <LeaderCard person={person} />
               </div>
-              <h3 className="mt-4 font-semibold text-brand-charcoal">{person.name}</h3>
-              <p className="text-sm text-brand-gray">{person.role}</p>
-            </div>
-          ))}
+            ))}
+          </div>
+        </div>
+
+        <div className="mt-16">
+          <h3 className="flex items-center justify-center gap-4 text-sm font-bold uppercase tracking-[0.2em] text-brand-gold-dark">
+            <span className="h-px w-12 bg-brand-gold/50" aria-hidden="true" />
+            Staff
+            <span className="h-px w-12 bg-brand-gold/50" aria-hidden="true" />
+          </h3>
+          <div className="mt-8 flex flex-wrap justify-center gap-x-8 gap-y-10">
+            {staff.map((person) => (
+              <div key={person.name + person.role} className="w-40 sm:w-48">
+                <LeaderCard person={person} />
+              </div>
+            ))}
+          </div>
         </div>
       </Section>
 
