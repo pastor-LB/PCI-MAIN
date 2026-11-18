@@ -41,7 +41,7 @@ export const NAV_LINKS = [
       { label: "Our Story", href: "/our-story" },
       { label: "Our Impact", href: "/our-impact" },
       { label: "News & Stories", href: "/news" },
-      { label: "Partners", href: "/about#partners" },
+      { label: "Leadership/Partners", href: "/about#leadership" },
       { label: "Contact Us", href: "/contact" },
     ],
   },
