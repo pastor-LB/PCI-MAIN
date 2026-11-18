@@ -11,7 +11,7 @@ export default function PageHero({ title, subtitle, children, tall = false }: Pa
   return (
     <div
       className={`flex items-center bg-gradient-to-br from-brand-purple to-brand-purple-dark px-4 pt-28 pb-12 text-center sm:px-6 lg:px-8 ${
-        tall ? "min-h-[60vh]" : "min-h-[40vh]"
+        tall ? "min-h-[40vh]" : "min-h-[30vh]"
       }`}
     >
       <div className="mx-auto max-w-3xl">
