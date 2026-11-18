@@ -44,7 +44,7 @@ export default function OneBlockPage() {
       <Breadcrumbs items={breadcrumbItems} />
 
       <Section background="white">
-        <div className="mx-auto max-w-3xl">
+        <div>
           <div className="flex items-center gap-3">
             <span className="flex h-12 w-12 items-center justify-center rounded-full bg-brand-gold/15">
               <Users2 className="h-6 w-6 text-brand-purple" aria-hidden="true" />
@@ -84,7 +84,7 @@ export default function OneBlockPage() {
       </Section>
 
       <Section background="cream">
-        <div className="mx-auto max-w-3xl">
+        <div>
           <div className="flex items-center gap-3">
             <span className="flex h-12 w-12 items-center justify-center rounded-full bg-brand-purple/10">
               <Sprout className="h-6 w-6 text-brand-purple" aria-hidden="true" />
@@ -112,7 +112,7 @@ export default function OneBlockPage() {
       </Section>
 
       <Section background="white">
-        <div className="mx-auto max-w-3xl">
+        <div>
           <div className="flex items-center gap-3">
             <span className="flex h-12 w-12 items-center justify-center rounded-full bg-brand-gold/15">
               <Eye className="h-6 w-6 text-brand-purple" aria-hidden="true" />
