@@ -38,6 +38,7 @@ export const NAV_LINKS = [
     label: "About",
     href: "/about",
     children: [
+      { label: "About PCI", href: "/about" },
       { label: "Our Story", href: "/our-story" },
       { label: "Our Impact", href: "/our-impact" },
       { label: "News & Stories", href: "/news" },
