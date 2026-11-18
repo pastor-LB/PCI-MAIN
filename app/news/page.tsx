@@ -27,7 +27,8 @@ const newsArticles = [
     date: "June 23, 2026",
     excerpt:
       "Meet one of our dedicated volunteers and learn how they're making a difference in Bridgeport's food pantry.",
-    image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&q=80",
+    image: "/images/news/volunteer-spotlight.jpg",
+    imagePosition: "center 20%",
   },
   {
     slug: "kidz-academy-summer-2026",
@@ -36,7 +37,8 @@ const newsArticles = [
     date: "June 15, 2026",
     excerpt:
       "As the year begins, our Park City Kidz Afterschool and Summer Camp programs welcome 200+ children into life-skills training and mentorship programs.",
-    image: "https://images.unsplash.com/photo-1427504494785-cdcd6c6dbdea?w=600&q=80",
+    image: "/images/news/park-city-kidz-update.jpg",
+    imagePosition: "center 55%",
   },
   {
     slug: "one-million-meals-milestone",
@@ -45,7 +47,8 @@ const newsArticles = [
     date: "June 1, 2026",
     excerpt:
       "What began twenty-seven years ago with a simple request to help feed families in need has grown into a powerful mission of hope, compassion, and community impact.",
-    image: "https://images.unsplash.com/photo-1593113646773-028c64a8f1b1?w=600&q=80",
+    image: "/images/news/one-million-meals.jpg",
+    imagePosition: "center 45%",
   },
 ];
 
@@ -78,11 +81,12 @@ export default function NewsPage() {
               href={`/news/${article.slug}`}
               className="group overflow-hidden rounded-xl shadow-md transition-shadow hover:shadow-lg"
             >
-              <div className="relative h-48 overflow-hidden bg-gray-200">
+              <div className="relative h-56 overflow-hidden bg-gray-200">
                 <img
                   src={article.image}
                   alt={article.title}
-                  className="h-full w-full object-cover transition-transform group-hover:scale-105"
+                  className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  style={{ objectPosition: article.imagePosition }}
                 />
               </div>
               <div className="p-6">
