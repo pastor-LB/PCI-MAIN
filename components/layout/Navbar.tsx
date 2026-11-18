@@ -110,9 +110,10 @@ export default function Navbar() {
                 >
                   {/* Trigger button */}
                   <button
-                    onClick={() =>
-                      setOpenMenu(openMenu === item.label ? null : item.label)
-                    }
+                    onClick={() => {
+                      if (closeTimer.current) clearTimeout(closeTimer.current);
+                      setOpenMenu(item.label);
+                    }}
                     aria-haspopup="true"
                     aria-expanded={openMenu === item.label}
                     className={`
