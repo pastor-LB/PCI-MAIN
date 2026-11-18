@@ -86,7 +86,7 @@ export default function ProgramsPage() {
       <Breadcrumbs items={breadcrumbItems} />
 
       <Section background="white">
-        <div className="mx-auto max-w-3xl text-center">
+        <div className="text-center">
           <h2 className="text-2xl font-bold text-brand-purple mb-4">
             Three Integrated Programs. One Transformative Mission.
           </h2>
