@@ -8,7 +8,7 @@ import PageHero from "@/components/sections/PageHero";
 import Section from "@/components/ui/Section";
 import Card from "@/components/ui/Card";
 import VolunteerForm from "@/components/forms/VolunteerForm";
-import { Utensils, GraduationCap, ShieldCheck } from "lucide-react";
+import { Utensils, GraduationCap, ShieldCheck, Sprout } from "lucide-react";
 
 export const metadata: Metadata = generatePageMetadata({
   title: "Volunteer — Help Your Community",
@@ -42,6 +42,12 @@ const opportunities = [
     description: "Learn more about the One Block cross-generational mentorship and neighborhood transformation initiative.",
     icon: ShieldCheck,
   },
+  {
+    title: "Farm Care Team Member",
+    schedule: "Seasonal",
+    description: "Help plant, grow, and harvest fresh collard greens and vegetables to share with our neighbors.",
+    icon: Sprout,
+  },
 ];
 
 export default function VolunteerPage() {
@@ -60,7 +66,7 @@ export default function VolunteerPage() {
       <Breadcrumbs items={breadcrumbItems} />
 
       <Section background="white">
-        <div className="grid gap-8 sm:grid-cols-3">
+        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
           {opportunities.map((opportunity) => {
             const Icon = opportunity.icon;
             return (
@@ -79,7 +85,37 @@ export default function VolunteerPage() {
         </div>
       </Section>
 
-      <Section background="cream">
+      <Section background="white" padding="md" className="!pt-0">
+        <div className="overflow-hidden rounded-2xl border-t-4 border-brand-gold bg-brand-cream shadow-md lg:grid lg:grid-cols-5">
+          <div className="flex flex-col justify-center bg-brand-purple p-6 text-white sm:p-8 lg:col-span-2">
+            <Sprout className="h-10 w-10 text-brand-gold-light" aria-hidden="true" />
+            <p className="mt-4 text-xs font-bold uppercase tracking-[0.2em] text-brand-gold-light">
+              Farm Care Team &middot; Seasonal
+            </p>
+            <h2 className="mt-2 font-heading text-2xl font-semibold sm:text-3xl">
+              Fresh Food. Nourishing Our Neighbors.
+            </h2>
+          </div>
+          <div className="p-6 sm:p-8 lg:col-span-3">
+            <p className="text-brand-gray">
+              In partnership with Green Village Initiative, the Bishop Jean Williams Community Market is
+              growing fresh collard greens and other vegetables to share with our neighbors.
+            </p>
+            <p className="mt-4 font-semibold text-brand-purple">
+              Help us plant seeds of hope and grow a healthier community! Complete the form below to join
+              us in planting, growing, and harvesting fresh produce for families in need.
+            </p>
+            <a
+              href="#volunteer-form"
+              className="mt-6 inline-block rounded-lg bg-brand-gold px-5 py-2.5 text-sm font-bold uppercase tracking-wide text-brand-purple-dark transition hover:bg-brand-gold-light"
+            >
+              Join the Farm Care Team &darr;
+            </a>
+          </div>
+        </div>
+      </Section>
+
+      <Section background="cream" id="volunteer-form" className="scroll-mt-24">
         <h2 className="text-center font-heading text-3xl font-semibold text-brand-purple">
           Volunteer Intake Form
         </h2>
