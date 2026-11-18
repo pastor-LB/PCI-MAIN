@@ -186,6 +186,8 @@ export default function OneMealPage() {
               <span className="font-semibold">Tuesdays, Bi-weekly</span>
               <br />
               9:00 am – 10:00 am
+              <br />
+              910 Fairfield Ave., Bridgeport
             </ScheduleBox>
           </Card>
         </div>
