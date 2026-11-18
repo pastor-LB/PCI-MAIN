@@ -33,7 +33,7 @@ const programs = [
       "5,650 senior care boxes delivered yearly",
       "3 distribution channels (walk-in, senior deliveries, mobile pantry)",
     ],
-    image: "https://images.unsplash.com/photo-1593113646773-028c64a8f1b1?w=900&q=80",
+    image: "/images/programs/one-meal.jpg",
     href: "/one-meal",
   },
   {
@@ -45,7 +45,7 @@ const programs = [
       "220+ children in life-skills training programs",
       "60 Kids attend Inspire Sports Camp",
     ],
-    image: "https://images.unsplash.com/photo-1529390079861-591de354faf5?w=900&q=80",
+    image: "/images/programs/one-child.jpg",
     href: "/one-child",
   },
   {
@@ -58,7 +58,7 @@ const programs = [
       "Youth leadership training programs",
       "Volunteer-powered block transformation",
     ],
-    image: "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=900&q=80",
+    image: "/images/programs/one-block.jpg",
     href: "/one-block",
   },
 ];
@@ -105,13 +105,13 @@ export default function ProgramsPage() {
               index % 2 === 1 ? "lg:[&>*:first-child]:order-2" : ""
             }`}
           >
-            <div className="relative h-72 overflow-hidden rounded-2xl shadow-lg sm:h-96">
+            <div className="relative h-96 overflow-hidden rounded-2xl shadow-lg sm:h-[32rem]">
               <Image
                 src={program.image}
-                // TODO: Replace with actual PCI photography
                 alt={`${program.title} program — ${program.subtitle}`}
                 fill
-                className="object-cover"
+                sizes="(min-width: 1024px) 50vw, 100vw"
+                className="object-cover object-center"
               />
             </div>
             <div>
