@@ -2,13 +2,12 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { ChevronDown } from "lucide-react";
 import Button from "@/components/ui/Button";
 import Badge from "@/components/ui/Badge";
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen bg-white pt-28 pb-12 overflow-hidden flex items-center">
+    <section className="relative bg-white pt-32 pb-12 overflow-hidden">
       {/* Subtle background gradient instead of image — TrumpRx style */}
       <div className="absolute inset-0 bg-gradient-to-br from-brand-cream via-white to-white pointer-events-none" />
 
@@ -22,12 +21,12 @@ export default function Hero() {
         aria-hidden="true"
       />
 
-      <div className="relative z-10 mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 text-center">
+      <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="mb-12"
+          className="mb-10"
         >
           {/* Mission statement first — answer WHY before asking */}
           <h1 className="text-xs sm:text-sm font-semibold whitespace-nowrap text-brand-purple mb-6">
@@ -41,7 +40,7 @@ export default function Hero() {
               </span>
               <span className="h-px w-10 sm:w-16 bg-brand-gold" aria-hidden="true" />
             </div>
-            <p className="font-heading text-3xl sm:text-5xl font-bold leading-tight text-brand-purple max-w-3xl mx-auto">
+            <p className="font-heading text-3xl sm:text-5xl font-bold leading-tight text-brand-purple">
               Providing pathways of hope that lead to real solutions
             </p>
             <p className="mt-4 font-heading text-lg sm:text-2xl italic text-brand-gold-dark">
@@ -49,7 +48,7 @@ export default function Hero() {
             </p>
           </div>
           <Badge variant="gold" className="mb-6">Why We Exist</Badge>
-          <p className="text-xl text-brand-gray mb-8 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-xl text-brand-gray mb-4 leading-relaxed">
             It began with one mother seeking help to feed her family. When she turned to Bishop Jean Williams, a simple act of compassion sparked a movement. Today, that legacy lives on through the One-Stop Shop Food Pantry and Community Resource Market, helping thousands of neighbors facing hunger, economic hardship, and barriers to opportunity.
           </p>
         </motion.div>
@@ -59,7 +58,7 @@ export default function Hero() {
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.7, delay: 0.2 }}
-          className="mb-16"
+          className="mb-12"
         >
           <div className="inline-block">
             <p className="text-sm font-bold uppercase tracking-widest text-brand-gold mb-4">
@@ -119,15 +118,6 @@ export default function Hero() {
         </motion.p>
       </div>
 
-      {/* Scroll indicator */}
-      <motion.div
-        animate={{ y: [0, 8, 0] }}
-        transition={{ duration: 1.6, repeat: Infinity }}
-        className="absolute bottom-8 left-1/2 z-10 -translate-x-1/2 text-brand-purple"
-        aria-hidden="true"
-      >
-        <ChevronDown className="h-8 w-8" />
-      </motion.div>
     </section>
   );
 }
