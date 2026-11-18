@@ -157,7 +157,7 @@ export default function OneBlockPage() {
               Organize an Adopt-A-Block cleanup in your neighborhood.
             </p>
             <a
-              href="mailto:help@parkcityinitiative.org?subject=Lead%20a%20Block%20Cleanup"
+              href="mailto:info@parkcityinitiative.org?subject=Lead%20a%20Block%20Cleanup"
               className="mt-4 inline-block font-semibold text-brand-purple hover:text-brand-gold"
             >
               Email Us →
@@ -169,7 +169,7 @@ export default function OneBlockPage() {
               Share your professional expertise with our youth leadership trainees.
             </p>
             <a
-              href="mailto:help@parkcityinitiative.org?subject=Volunteer%20to%20Train%20Youth%20Leaders"
+              href="mailto:info@parkcityinitiative.org?subject=Volunteer%20to%20Train%20Youth%20Leaders"
               className="mt-4 inline-block font-semibold text-brand-purple hover:text-brand-gold"
             >
               Email Us →
