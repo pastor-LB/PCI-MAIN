@@ -7,7 +7,7 @@ export function organizationSchema() {
     name: SITE.name,
     alternateName: SITE.shortName,
     url: SITE.url,
-    logo: `${SITE.url}/images/pci-logo-v2.png`,
+    logo: `${SITE.url}/images/pci-logo-v3.png`,
     description:
       "Park City Initiative is a 501(c)(3) nonprofit in Bridgeport, CT providing food assistance, youth programs, and community development services.",
     foundingDate: String(SITE.founded),
