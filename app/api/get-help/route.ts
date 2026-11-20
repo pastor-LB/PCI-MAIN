@@ -27,7 +27,11 @@ export async function POST(request: Request) {
     try {
       const { Resend } = await import("resend");
       const resend = new Resend(apiKey);
-      await resend.emails.send({
+      const send = async (opts: Parameters<typeof resend.emails.send>[0]) => {
+        const { error } = await resend.emails.send(opts);
+        if (error) console.error("Resend rejected email", error);
+      };
+      await send({
         from: process.env.EMAIL_FROM ?? "PCI Website <noreply@parkcityinitiative.org>",
         to: emailTo,
         subject: `New Help Request — ${firstName} ${lastName}`,
@@ -35,7 +39,7 @@ export async function POST(request: Request) {
       });
 
       if (email) {
-        await resend.emails.send({
+        await send({
           from: process.env.EMAIL_FROM ?? "Park City Initiative <noreply@parkcityinitiative.org>",
           to: email,
           subject: "We received your request — Park City Initiative",
