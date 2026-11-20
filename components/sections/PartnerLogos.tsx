@@ -9,6 +9,10 @@ const partners: Partner[] = [
     description: "Faith partner in Bridgeport",
   },
   {
+    name: "First Presbyterian Church of Fairfield",
+    description: "Faith partner in Fairfield",
+  },
+  {
     name: "Fairfield County's Community Foundation",
     url: "https://www.fccfoundation.org",
     description: "Community foundation & funder",
