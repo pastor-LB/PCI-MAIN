@@ -74,7 +74,7 @@ export default function Navbar() {
             className="flex items-center shrink-0"
             aria-label="Park City Initiative — Home"
           >
-            <Image src="/images/pci-logo-v4.png" alt="Park City Initiative Corp." width={960} height={361} priority className="h-14 sm:h-16 w-auto" />
+            <Image src="/images/pci-logo-v5.png" alt="Park City Initiative Corp." width={712} height={383} priority className="h-16 sm:h-[76px] w-auto" />
           </Link>
 
           {/* Desktop nav */}
