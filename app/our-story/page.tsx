@@ -63,7 +63,7 @@ export default function OurStoryPage() {
       <Breadcrumbs items={breadcrumbItems} />
 
       <Section background="white">
-        <div className="mb-10 grid items-center gap-12 lg:grid-cols-5">
+        <div className="grid items-center gap-12 lg:grid-cols-5">
           <div className="lg:col-span-3">
           <h2 className="text-3xl font-bold text-brand-purple mb-6">
             One Request. 27 Years. One Million Meals.
@@ -90,28 +90,31 @@ export default function OurStoryPage() {
             </p>
           </div>
           </div>
-          <figure className="relative mx-auto w-full max-w-md lg:col-span-2">
-            <div aria-hidden="true" className="absolute -bottom-4 -right-4 h-full w-full rounded-2xl bg-brand-gold/80 lg:rotate-2" />
-            <div aria-hidden="true" className="absolute -left-4 -top-4 h-20 w-20 rounded-full border-4 border-brand-purple/25" />
-            <img
-              src="/images/our-story/food-pantry-team.jpg"
-              alt="Park City Initiative volunteers in orange shirts in front of the Bishop Jean Williams Food Pantry truck"
-              className="relative w-full rounded-2xl object-cover shadow-xl transition-transform duration-500 hover:rotate-0 lg:-rotate-2"
-            />
-            <figcaption className="relative mt-8 text-center font-heading text-xl italic text-brand-purple">
-              &ldquo;No One Should Go Hungry&rdquo;
-            </figcaption>
+          <figure className="relative mx-auto mb-4 w-full max-w-md pt-4 lg:col-span-2 lg:mb-0">
+            <div className="relative bg-white p-3 pb-4 shadow-2xl ring-1 ring-black/5 transition-transform duration-500 hover:rotate-0 sm:p-4 sm:pb-5 lg:-rotate-2">
+              <span aria-hidden="true" className="absolute -top-3 left-6 h-6 w-20 -rotate-6 bg-brand-gold/70 shadow-sm" />
+              <span aria-hidden="true" className="absolute -top-3 right-6 h-6 w-20 rotate-6 bg-brand-gold/70 shadow-sm" />
+              <img
+                src="/images/our-story/food-pantry-team.jpg"
+                alt="Park City Initiative volunteers in orange shirts in front of the Bishop Jean Williams Food Pantry truck"
+                className="aspect-[4/3] w-full object-cover"
+              />
+              <figcaption className="pt-4 pb-9 text-center font-heading text-xl italic text-brand-purple">
+                &ldquo;No One Should Go Hungry&rdquo;
+              </figcaption>
+            </div>
+            <div className="absolute -bottom-5 -right-2 rotate-3 rounded-lg bg-brand-purple px-4 py-2 text-white shadow-lg sm:-right-5">
+              <p className="text-[10px] font-semibold uppercase tracking-widest text-brand-gold-light">Serving Bridgeport</p>
+              <p className="font-heading text-lg font-bold leading-tight">Since 1999</p>
+            </div>
           </figure>
-        </div>
-
-        <div className="border-t border-gray-200 pt-12">
-          <h2 className="text-2xl font-bold text-brand-purple mb-8 text-center">
-            Our 27-Year Journey
-          </h2>
         </div>
       </Section>
 
       <Section background="gray-light">
+        <h2 className="text-2xl font-bold text-brand-purple mb-10 text-center">
+          Our 27-Year Journey
+        </h2>
         <StoryTimeline milestones={milestones} />
       </Section>
 
