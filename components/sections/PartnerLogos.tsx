@@ -5,6 +5,20 @@ type Partner = { name: string; url?: string; description: string };
 
 const partners: Partner[] = [
   {
+    name: "City Wide Church",
+    description: "Faith partner in Bridgeport",
+  },
+  {
+    name: "Fairfield County's Community Foundation",
+    url: "https://www.fccfoundation.org",
+    description: "Community foundation & funder",
+  },
+  {
+    name: "Town Fair Tire",
+    url: "https://www.townfairtire.com",
+    description: "Community business partner",
+  },
+  {
     name: "CT Foodshare",
     url: "https://www.ctfoodshare.org",
     description: "Connecticut's largest food bank",
@@ -38,11 +52,6 @@ const partners: Partner[] = [
     description: "Fairfield County grant partner",
   },
   {
-    name: "Town Fair Tire",
-    url: "https://www.townfairtire.com",
-    description: "Community business partner",
-  },
-  {
     name: "M&T Bank",
     url: "https://www.mtb.com",
     description: "Community banking partner",
@@ -59,10 +68,6 @@ const partners: Partner[] = [
   {
     name: "Goodwill Career Center",
     description: "Career & job readiness resources",
-  },
-  {
-    name: "City Wide Church",
-    description: "Faith partner in Bridgeport",
   },
 ];
 
