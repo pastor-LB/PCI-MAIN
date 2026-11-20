@@ -28,7 +28,7 @@ const milestones = [
   { year: "2004", title: "Access to Recovery Provider", description: "PCI becomes an Access to Recovery provider, and United Way funding begins.", icon: HandCoins },
   { year: "2007", title: "Capacity-Building Grant", description: "PCI receives a $10,000 capacity-building grant from the City of Bridgeport.", icon: Coins },
   { year: "2007", title: "Adopt-A-Block Program Launches", description: "The Adopt-A-Block neighborhood cleanup program launches.", icon: ShieldCheck },
-  { year: "2014", title: "First Refrigerated Truck", description: "A $15,000 Walmart grant funds PCI's first refrigerated delivery truck.", icon: Truck },
+  { year: "2014", title: "First Refrigerated Truck", description: "A $15,000 Walmart Spark Change grant funds PCI's first refrigerated delivery truck.", icon: Truck },
   { year: "2018", title: "686,000 lbs of Food Distributed", description: "PCI distributes 686,000 lbs of food and 340,000+ meals in a single year.", icon: Award },
   { year: "2018", title: "Living Legacy Award", description: "Pastor Mary, President/CEO, receives the Living Legacy Award from the City of Bridgeport.", icon: Award },
   { year: "2020", title: "COVID-19 Volunteer Recognition", description: "PCI's pandemic-response volunteers are recognized by Senator Blumenthal.", icon: ShieldCheck },
