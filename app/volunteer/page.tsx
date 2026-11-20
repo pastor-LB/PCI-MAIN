@@ -89,11 +89,11 @@ export default function VolunteerPage() {
         <div className="overflow-hidden rounded-2xl border-t-4 border-brand-gold bg-brand-cream shadow-md lg:grid lg:grid-cols-5">
           <div className="relative min-h-[22rem] overflow-hidden text-white lg:col-span-2">
             <img
-              src="/images/volunteer/farm-care.jpg"
+              src="/images/volunteer/farm-care-bright.jpg"
               alt="Volunteers tending rows of collard greens in the community garden"
               className="absolute inset-0 h-full w-full object-cover object-[center_40%]"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-brand-purple/95 via-brand-purple/30 to-transparent" aria-hidden="true" />
+            <div className="absolute inset-0 bg-gradient-to-t from-brand-purple/90 via-brand-purple/15 via-45% to-transparent" aria-hidden="true" />
             <div className="relative flex h-full min-h-[22rem] flex-col justify-end p-6 sm:p-8">
               <Sprout className="h-10 w-10 text-brand-gold-light" aria-hidden="true" />
               <p className="mt-3 text-xs font-bold uppercase tracking-[0.2em] text-brand-gold-light">
