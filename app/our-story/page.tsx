@@ -63,11 +63,11 @@ export default function OurStoryPage() {
       <Breadcrumbs items={breadcrumbItems} />
 
       <Section background="white">
+        <h2 className="text-3xl font-bold text-brand-purple mb-10 text-center">
+          One Request. 27 Years. One Million Meals.
+        </h2>
         <div className="grid items-center gap-12 lg:grid-cols-5">
           <div className="lg:col-span-3">
-          <h2 className="text-3xl font-bold text-brand-purple mb-6">
-            One Request. 27 Years. One Million Meals.
-          </h2>
           <div className="space-y-4 text-lg text-brand-gray">
             <p>
               In 1999, Bishop Jean Williams made a simple request to her daughter, Mary Green:
