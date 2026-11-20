@@ -9,7 +9,7 @@ export const getHelpSchema = z.object({
   city: z.string().optional().or(z.literal("")),
   zip: z.string().regex(/^\d{5}$/, "Enter a valid 5-digit ZIP code"),
   householdSize: z.string().min(1, "Household size is required"),
-  helpType: z.array(z.string()).min(1, "Select at least one type of help"),
+  helpType: z.array(z.string(), { error: "Select at least one type of help" }).min(1, "Select at least one type of help"),
   status: z.enum(["new", "returning"], {
     message: "Please select new or returning",
   }),
@@ -26,8 +26,8 @@ export const volunteerSchema = z.object({
   email: z.string().email("Enter a valid email"),
   phone: z.string().min(10, "Enter a valid phone number"),
   ageRange: z.string().min(1, "Age range is required"),
-  interests: z.array(z.string()).min(1, "Select at least one area of interest"),
-  availability: z.array(z.string()).min(1, "Select at least one availability option"),
+  interests: z.array(z.string(), { error: "Select at least one area of interest" }).min(1, "Select at least one area of interest"),
+  availability: z.array(z.string(), { error: "Select at least one availability option" }).min(1, "Select at least one availability option"),
   volunteeredBefore: z.enum(["yes", "no"], {
     message: "Please select yes or no",
   }),
