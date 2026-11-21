@@ -24,7 +24,7 @@ const breadcrumbItems = [
 
 const stats = [
   { value: "1,000,000+", label: "Meals Distributed in 2025", icon: <Utensils /> },
-  { value: "32,429", label: "Families Supported in 2025", icon: <Users /> },
+  { value: "32,429", label: "Duplicated Families Supported in 2025", icon: <Users /> },
   { value: "5,650", label: "Senior Care Boxes", icon: <HeartHandshake /> },
   { value: "220", label: "Children in Life-Skills Training", icon: <GraduationCap /> },
   { value: "60", label: "Students Sponsored — Inspire Sports Camp", icon: <Trophy /> },
