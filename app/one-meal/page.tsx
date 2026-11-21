@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
+import Image from "next/image";
 import { generatePageMetadata } from "@/lib/metadata";
 import { localBusinessSchema, breadcrumbSchema } from "@/lib/schema";
 import { SITE } from "@/lib/constants";
@@ -113,8 +114,18 @@ export default function OneMealPage() {
       {/* Programs */}
       <Section background="white">
         {/* Featured: Community Market */}
-        <div className="overflow-hidden rounded-2xl border-t-4 border-brand-gold bg-white shadow-lg lg:grid lg:grid-cols-5">
-          <div className="p-6 sm:p-8 lg:col-span-3">
+        <div className="overflow-hidden rounded-2xl border-t-4 border-brand-gold bg-white shadow-lg lg:grid lg:grid-cols-12">
+          <div className="relative aspect-[4/3] lg:col-span-4 lg:row-span-2 lg:aspect-auto lg:min-h-full">
+            <Image
+              src="/images/programs/one-meal.jpg"
+              alt="Fresh produce and groceries on the shelves of the Community Market"
+              fill
+              sizes="(min-width: 1024px) 33vw, 100vw"
+              className="object-cover"
+              style={{ objectPosition: "center 40%" }}
+            />
+          </div>
+          <div className="p-6 sm:p-8 lg:col-span-8">
             <div className="flex items-center gap-3">
               <span className="flex h-12 w-12 items-center justify-center rounded-full bg-brand-gold/15">
                 <Store className="h-6 w-6 text-brand-purple" aria-hidden="true" />
@@ -133,7 +144,7 @@ export default function OneMealPage() {
               ensuring that our community thrives with health and dignity.
             </p>
           </div>
-          <div className="bg-brand-purple p-6 text-white sm:p-8 lg:col-span-2">
+          <div className="bg-brand-purple p-6 text-white sm:p-8 lg:col-span-8">
             <p className="flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-brand-gold-light">
               <Clock className="h-4 w-4" aria-hidden="true" />
               Market Schedule
