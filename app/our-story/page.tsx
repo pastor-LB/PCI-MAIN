@@ -8,6 +8,7 @@ import PageHero from "@/components/sections/PageHero";
 import Section from "@/components/ui/Section";
 import StoryTimeline from "@/components/sections/StoryTimeline";
 import CTABanner from "@/components/sections/CTABanner";
+import FramedPhoto from "@/components/ui/FramedPhoto";
 
 export const metadata: Metadata = generatePageMetadata({
   title: "Our Story — From One Request to 1 Million Meals",
@@ -90,24 +91,18 @@ export default function OurStoryPage() {
             </p>
           </div>
           </div>
-          <figure className="relative mx-auto mb-4 w-full max-w-md pt-4 lg:col-span-2 lg:mb-0">
-            <div className="relative bg-white p-3 pb-4 shadow-2xl ring-1 ring-black/5 transition-transform duration-500 hover:rotate-0 sm:p-4 sm:pb-5 lg:-rotate-2">
-              <span aria-hidden="true" className="absolute -top-3 left-6 h-6 w-20 -rotate-6 bg-brand-gold/70 shadow-sm" />
-              <span aria-hidden="true" className="absolute -top-3 right-6 h-6 w-20 rotate-6 bg-brand-gold/70 shadow-sm" />
-              <img
-                src="/images/our-story/food-pantry-team.jpg"
-                alt="Park City Initiative volunteers in orange shirts in front of the Bishop Jean Williams Food Pantry truck"
-                className="aspect-[4/3] w-full object-cover"
-              />
-              <figcaption className="pt-4 pb-9 text-center font-heading text-xl italic text-brand-purple">
-                &ldquo;No One Should Go Hungry&rdquo;
-              </figcaption>
-            </div>
-            <div className="absolute -bottom-5 -right-2 rotate-3 rounded-lg bg-brand-purple px-4 py-2 text-white shadow-lg sm:-right-5">
+          <FramedPhoto
+            src="/images/our-story/food-pantry-team.jpg"
+            alt="Park City Initiative volunteers in orange shirts in front of the Bishop Jean Williams Food Pantry truck"
+            aspect="aspect-[4/3]"
+            caption="No One Should Go Hungry"
+            className="lg:col-span-2"
+          >
+            <div className="absolute -left-3 -top-4 rounded-lg bg-brand-purple px-4 py-2 text-white shadow-lg sm:-left-5">
               <p className="text-[10px] font-semibold uppercase tracking-widest text-brand-gold-light">Serving Bridgeport</p>
               <p className="font-heading text-lg font-bold leading-tight">Since 1999</p>
             </div>
-          </figure>
+          </FramedPhoto>
         </div>
       </Section>
 
