@@ -106,19 +106,39 @@ export default function VolunteerPage() {
           </div>
           <div className="flex flex-col justify-center p-6 sm:p-8 lg:col-span-3">
             <p className="text-brand-gray">
-              In partnership with Green Village Initiative, the Bishop Jean Williams Community Market is
-              growing fresh collard greens and other vegetables to share with our neighbors.
+              Through our valued partnership with Green Village Initiative, the Bishop Jean Williams Community
+              Market is bringing fresh, locally grown collard greens and other nutritious vegetables directly to
+              the tables of our neighbors. From the farm to our Market and into the homes of the families we
+              serve, these fresh harvests have been warmly welcomed and greatly appreciated by our community.
+              This partnership is another meaningful way we are working together to nourish families, promote
+              healthy eating, and strengthen our community.
             </p>
-            <p className="mt-4 font-semibold text-brand-purple">
-              Help us plant seeds of hope and grow a healthier community! Complete the form below to join
-              us in planting, growing, and harvesting fresh produce for families in need.
-            </p>
-            <a
-              href="#volunteer-form"
-              className="mt-6 inline-block self-start rounded-lg bg-brand-gold px-5 py-2.5 text-sm font-bold uppercase tracking-wide text-brand-purple-dark transition hover:bg-brand-gold-light"
-            >
-              Join the Farm Care Team &darr;
-            </a>
+            <div className="mt-6 grid items-center gap-6 sm:grid-cols-5">
+              <figure className="sm:col-span-2">
+                <div className="overflow-hidden rounded-xl shadow-md ring-1 ring-black/5">
+                  <img
+                    src="/images/volunteer/market-produce.jpg"
+                    alt="Fresh collard greens, peppers, bananas, and other produce displayed at the Community Market"
+                    className="aspect-[4/5] w-full object-cover"
+                  />
+                </div>
+                <figcaption className="mt-2 text-center text-[11px] font-semibold uppercase tracking-[0.2em] text-brand-gold-dark">
+                  At the Market
+                </figcaption>
+              </figure>
+              <div className="sm:col-span-3">
+                <p className="font-semibold text-brand-purple">
+                  Help us plant seeds of hope and grow a healthier community! Complete the form below to join
+                  us in planting, growing, and harvesting fresh produce for families in need.
+                </p>
+                <a
+                  href="#volunteer-form"
+                  className="mt-6 inline-block rounded-lg bg-brand-gold px-5 py-2.5 text-sm font-bold uppercase tracking-wide text-brand-purple-dark transition hover:bg-brand-gold-light"
+                >
+                  Join the Farm Care Team &darr;
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </Section>
