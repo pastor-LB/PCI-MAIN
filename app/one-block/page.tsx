@@ -7,6 +7,7 @@ import PageHero from "@/components/sections/PageHero";
 import Section from "@/components/ui/Section";
 import Card from "@/components/ui/Card";
 import StatCard from "@/components/ui/StatCard";
+import FramedPhoto from "@/components/ui/FramedPhoto";
 import { Users2, Sprout, Eye } from "lucide-react";
 
 export const metadata: Metadata = generatePageMetadata({
@@ -44,7 +45,8 @@ export default function OneBlockPage() {
       <Breadcrumbs items={breadcrumbItems} />
 
       <Section background="white">
-        <div>
+        <div className="grid items-center gap-12 lg:grid-cols-12">
+        <div className="lg:col-span-7">
           <div className="flex items-center gap-3">
             <span className="flex h-12 w-12 items-center justify-center rounded-full bg-brand-gold/15">
               <Users2 className="h-6 w-6 text-brand-purple" aria-hidden="true" />
@@ -80,6 +82,14 @@ export default function OneBlockPage() {
               visible, lasting improvements.
             </p>
           </div>
+        </div>
+          <FramedPhoto
+            src="/images/programs/one-block.jpg"
+            alt="An older volunteer and a teen working side by side on a neighborhood cleanup"
+            position="center 15%"
+            caption="Generations working side by side"
+            className="lg:col-span-5"
+          />
         </div>
       </Section>
 
