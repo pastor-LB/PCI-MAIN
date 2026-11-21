@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
 import { generatePageMetadata } from "@/lib/metadata";
 import { breadcrumbSchema } from "@/lib/schema";
@@ -8,6 +7,7 @@ import Breadcrumbs from "@/components/ui/Breadcrumbs";
 import PageHero from "@/components/sections/PageHero";
 import Section from "@/components/ui/Section";
 import Button from "@/components/ui/Button";
+import { Utensils, Sparkles, Users2 } from "lucide-react";
 
 export const metadata: Metadata = generatePageMetadata({
   title: "Our Programs — Food Pantry, Youth Development & Community",
@@ -33,9 +33,8 @@ const programs = [
       "5,650 senior care boxes delivered yearly",
       "3 distribution channels (walk-in, senior deliveries, mobile pantry)",
     ],
-    image: "/images/programs/one-meal.jpg",
-    imagePosition: "center 40%",
     href: "/one-meal",
+    icon: Utensils,
   },
   {
     title: "One Child",
@@ -46,10 +45,8 @@ const programs = [
       "220+ children in life-skills training programs",
       "60 Kids attend Inspire Sports Camp",
     ],
-    image: "/images/programs/one-child-dream-bus.jpg",
-    imagePosition: "center 40%",
-    wide: true,
     href: "/one-child",
+    icon: Sparkles,
   },
   {
     title: "One Block",
@@ -61,9 +58,8 @@ const programs = [
       "Youth leadership training programs",
       "Volunteer-powered block transformation",
     ],
-    image: "/images/programs/one-block.jpg",
-    imagePosition: "center 15%",
     href: "/one-block",
+    icon: Users2,
   },
 ];
 
@@ -102,54 +98,46 @@ export default function ProgramsPage() {
         </div>
       </Section>
 
-      {programs.map((program, index) => (
-        <Section key={program.title} background={index % 2 === 0 ? "white" : "cream"}>
-          <div
-            className={`grid items-center gap-10 lg:grid-cols-2 ${
-              index % 2 === 1 ? "lg:[&>*:first-child]:order-2" : ""
-            }`}
-          >
-            <div
-              className={`relative mx-auto w-full max-w-xl overflow-hidden rounded-2xl shadow-lg ${
-                "wide" in program && program.wide ? "aspect-[3/2]" : "h-96 sm:h-[32rem]"
-              }`}
-            >
-              <Image
-                src={program.image}
-                alt={`${program.title} program — ${program.subtitle}`}
-                fill
-                sizes="(min-width: 1024px) 50vw, 100vw"
-                className="object-cover"
-                style={{ objectPosition: program.imagePosition }}
-              />
-            </div>
-            <div>
-              <span className="text-sm font-bold uppercase tracking-wide text-brand-gold">
-                {program.subtitle}
-              </span>
-              <h2 className="mt-2 font-heading text-3xl font-semibold text-brand-purple">
-                {program.title}
-              </h2>
-              <p className="mt-4 text-brand-gray">{program.description}</p>
-
-              <div className="mt-6 space-y-2">
-                {program.details.map((detail) => (
-                  <div key={detail} className="flex items-start gap-3">
-                    <span className="mt-1.5 inline-block h-2 w-2 rounded-full bg-brand-gold flex-shrink-0" />
-                    <p className="text-sm text-brand-charcoal">{detail}</p>
-                  </div>
-                ))}
-              </div>
-
-              <div className="mt-8">
-                <Button href={program.href} variant="primary">
-                  Learn More About {program.title} →
-                </Button>
-              </div>
-            </div>
-          </div>
-        </Section>
-      ))}
+      <Section background="cream">
+        <div className="grid gap-8 lg:grid-cols-3">
+          {programs.map((program, index) => {
+            const Icon = program.icon;
+            return (
+              <article
+                key={program.title}
+                className="flex h-full flex-col rounded-2xl border-t-4 border-brand-gold bg-white p-7 shadow-md transition-shadow duration-300 hover:shadow-xl sm:p-8"
+              >
+                <div className="flex items-center justify-between">
+                  <span className="flex h-14 w-14 items-center justify-center rounded-full bg-brand-purple/10">
+                    <Icon className="h-7 w-7 text-brand-purple" aria-hidden="true" />
+                  </span>
+                  <span className="font-heading text-4xl font-semibold text-brand-gold/40" aria-hidden="true">
+                    {String(index + 1).padStart(2, "0")}
+                  </span>
+                </div>
+                <h2 className="mt-6 font-heading text-3xl font-semibold text-brand-purple">{program.title}</h2>
+                <p className="mt-2 text-xs font-bold uppercase tracking-widest text-brand-gold-dark">
+                  {program.subtitle}
+                </p>
+                <p className="mt-4 text-brand-gray">{program.description}</p>
+                <ul className="mt-6 space-y-3 border-t border-brand-gray/15 pt-6">
+                  {program.details.map((detail) => (
+                    <li key={detail} className="flex items-start gap-3">
+                      <span className="mt-1.5 inline-block h-2 w-2 flex-shrink-0 rounded-full bg-brand-gold" />
+                      <span className="text-sm text-brand-charcoal">{detail}</span>
+                    </li>
+                  ))}
+                </ul>
+                <div className="mt-auto pt-8">
+                  <Button href={program.href} variant="primary">
+                    Learn More About {program.title} →
+                  </Button>
+                </div>
+              </article>
+            );
+          })}
+        </div>
+      </Section>
 
       <Section background="purple" padding="md">
         <div className="flex flex-col items-center justify-center gap-6 text-center sm:flex-row sm:justify-between sm:text-left">
