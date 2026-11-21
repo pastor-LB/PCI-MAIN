@@ -8,6 +8,7 @@ import PageHero from "@/components/sections/PageHero";
 import Section from "@/components/ui/Section";
 import CTABanner from "@/components/sections/CTABanner";
 import Button from "@/components/ui/Button";
+import FramedPhoto from "@/components/ui/FramedPhoto";
 import { Truck, Sun } from "lucide-react";
 
 export const metadata: Metadata = generatePageMetadata({
@@ -39,7 +40,8 @@ export default function OneChildPage() {
       <Breadcrumbs items={breadcrumbItems} />
 
       <Section background="white">
-        <div>
+        <div className="grid items-center gap-12 lg:grid-cols-12">
+        <div className="lg:col-span-7">
           <div className="flex items-center gap-3">
             <span className="flex h-12 w-12 items-center justify-center rounded-full bg-brand-gold/15">
               <Truck className="h-6 w-6 text-brand-purple" aria-hidden="true" />
@@ -74,6 +76,15 @@ export default function OneChildPage() {
             Because when we invest in children today, we help build stronger individuals, families, and
             communities tomorrow.
           </p>
+        </div>
+          <FramedPhoto
+            src="/images/programs/one-child-dream-bus.jpg"
+            alt="Children smiling in front of the Park City Kidz Dream bus"
+            aspect="aspect-[4/3]"
+            position="center 40%"
+            caption="Park City Kidz Mobile"
+            className="lg:col-span-5"
+          />
         </div>
       </Section>
 
