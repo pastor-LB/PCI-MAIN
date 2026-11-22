@@ -25,8 +25,8 @@ const breadcrumbItems = [
 
 const stats = [
   { value: "241+", label: "Youth Served", variant: "purple-on-light" as const },
-  { value: "18+", label: "Blocks Adopted", variant: "purple-on-light" as const },
-  { value: "50+", label: "Sessions Run Annually", variant: "purple-on-light" as const },
+  { value: "9+", label: "Blocks Adopted as of 2026", variant: "purple-on-light" as const },
+  { value: "10+", label: "Sessions Run as of 2026", variant: "purple-on-light" as const },
 ];
 
 export default function OneBlockPage() {
