@@ -107,8 +107,11 @@ export default function VolunteerPage() {
             <p className="text-brand-gray">
               Through our valued partnership with Green Village Initiative, the Bishop Jean Williams Community
               Market is bringing fresh, locally grown collard greens and other nutritious vegetables directly to
-              the tables of our neighbors. From the farm to our Market and into the homes of the families we
-              serve, these fresh harvests have been warmly welcomed and greatly appreciated by our community.
+              the tables of our neighbors.{" "}
+              <strong className="font-semibold text-brand-charcoal">
+                From the farm to our Market and into the homes of the families we serve,
+              </strong>{" "}
+              these fresh harvests have been warmly welcomed and greatly appreciated by our community.
               This partnership is another meaningful way we are working together to nourish families, promote
               healthy eating, and strengthen our community.
             </p>
