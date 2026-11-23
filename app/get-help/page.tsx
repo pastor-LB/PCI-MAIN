@@ -61,7 +61,11 @@ export default function GetHelpPage() {
             <h3 className="mt-3 text-lg font-semibold text-brand-charcoal">Food Assistance</h3>
             <p className="mt-2 text-sm text-brand-gray">
               Pantry access, senior care boxes, and mobile pantry deliveries are available to anyone while
-              supplies last.
+              supplies last. (Please see the{" "}
+              <a href="/one-meal" className="font-semibold text-brand-purple underline underline-offset-2 hover:text-brand-gold-dark">
+                &ldquo;One Meal&rdquo;
+              </a>{" "}
+              section for further details.)
             </p>
           </Card>
           <Card borderColor="purple">
