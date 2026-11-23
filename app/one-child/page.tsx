@@ -89,7 +89,15 @@ export default function OneChildPage() {
       </Section>
 
       <Section background="cream">
-        <div>
+        <div className="grid items-center gap-12 lg:grid-cols-12">
+        <FramedPhoto
+          src="/images/one-child/summer-camp-arrival.jpg"
+          alt="Camp counselors cheering with pool noodles as smiling children step off the bus at overnight summer camp"
+          position="center 35%"
+          caption="Welcome to Camp!"
+          className="lg:col-span-5"
+        />
+        <div className="lg:col-span-7">
           <div className="flex items-center gap-3">
             <span className="flex h-12 w-12 items-center justify-center rounded-full bg-brand-purple/10">
               <Sun className="h-6 w-6 text-brand-purple" aria-hidden="true" />
@@ -114,6 +122,7 @@ export default function OneChildPage() {
               simply enjoy being children.
             </p>
           </div>
+        </div>
         </div>
       </Section>
 
