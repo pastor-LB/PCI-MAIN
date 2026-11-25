@@ -5,8 +5,8 @@ import TestimonialCarousel from "@/components/sections/TestimonialCarousel";
 export default function MissionClarity() {
   return (
     <Section background="white" className="!pb-0 sm:!pb-0">
-      <div className="grid items-center gap-12 lg:grid-cols-5">
-        <div className="text-center lg:col-span-3">
+      <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-5">
+        <div className="min-w-0 text-center lg:col-span-3">
           <h2 className="font-heading text-3xl font-semibold text-brand-purple sm:text-4xl">
             We don&apos;t just feed people. We build futures.
           </h2>
@@ -28,7 +28,7 @@ export default function MissionClarity() {
             </Button>
           </div>
         </div>
-        <div className="rounded-2xl border-l-4 border-brand-gold bg-brand-cream p-6 shadow-sm lg:col-span-2">
+        <div className="min-w-0 rounded-2xl border-l-4 border-brand-gold bg-brand-cream p-6 shadow-sm lg:col-span-2">
           <TestimonialCarousel compact />
         </div>
       </div>
